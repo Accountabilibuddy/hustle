@@ -10,9 +10,26 @@ import UIKit
 
 class JobSearchController: UIViewController {
 
+    @IBAction func fiveCompaniesSwitch(_ sender: Any) {
+        
+    }
+    @IBAction func highVolume(_ sender: Any) {
+        
+    }
+    @IBAction func Research(_ sender: Any) {
+        
+    }
+
+    let jobSearch : JobSearch
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        if let jobSearch = jobSearch {
+        
+        }
+        
+    
     }
 
 }

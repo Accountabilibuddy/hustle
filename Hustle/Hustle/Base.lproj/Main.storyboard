@@ -126,13 +126,79 @@
                     <view key="view" contentMode="scaleToFill" id="hP4-wx-wTA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fc3-LQ-va9">
+                                <rect key="frame" x="16" y="35" width="51" height="31"/>
+                                <connections>
+                                    <action selector="fiveCompaniesSwitch:" destination="cn6-i8-ua3" eventType="valueChanged" id="rPQ-91-6OL"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kza-mB-oza">
+                                <rect key="frame" x="16" y="126" width="51" height="31"/>
+                                <connections>
+                                    <action selector="highVolume:" destination="cn6-i8-ua3" eventType="valueChanged" id="aVb-zO-tUi"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apply to 5 companies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bh6-ch-Zls">
+                                <rect key="frame" x="129" y="39" width="166" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ifu-rz-zyy">
+                                <rect key="frame" x="16" y="207" width="51" height="31"/>
+                                <connections>
+                                    <action selector="Research:" destination="cn6-i8-ua3" eventType="valueChanged" id="A5X-6P-rL4"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reseach company events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsn-nc-83s">
+                                <rect key="frame" x="129" y="212" width="195.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High Volume Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBQ-WZ-yhb">
+                                <rect key="frame" x="129" y="131" width="155" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Kgp-tJ-CX3">
+                                <rect key="frame" x="67" y="392" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="bh6-ch-Zls" secondAttribute="trailing" constant="300" id="3zj-Hd-2m0"/>
+                            <constraint firstItem="fBQ-WZ-yhb" firstAttribute="leading" secondItem="Kza-mB-oza" secondAttribute="trailing" constant="64" id="5SU-On-zEg"/>
+                            <constraint firstItem="Kza-mB-oza" firstAttribute="top" secondItem="fc3-LQ-va9" secondAttribute="bottom" constant="60" id="C1u-ZO-u4t"/>
+                            <constraint firstItem="Ifu-rz-zyy" firstAttribute="top" secondItem="Kza-mB-oza" secondAttribute="bottom" constant="50" id="Eoa-OK-tcr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Kgp-tJ-CX3" secondAttribute="trailing" constant="52" id="GEN-bz-I0o"/>
+                            <constraint firstItem="bsn-nc-83s" firstAttribute="leading" secondItem="Ifu-rz-zyy" secondAttribute="trailing" constant="64" id="GWg-tC-dU2"/>
+                            <constraint firstItem="bh6-ch-Zls" firstAttribute="top" secondItem="WjI-Gj-LKn" secondAttribute="bottom" constant="19" id="MKD-wr-ViG"/>
+                            <constraint firstItem="Kgp-tJ-CX3" firstAttribute="leading" secondItem="hP4-wx-wTA" secondAttribute="leadingMargin" constant="51" id="MqX-HH-lv5"/>
+                            <constraint firstItem="fc3-LQ-va9" firstAttribute="top" secondItem="WjI-Gj-LKn" secondAttribute="bottom" constant="15" id="N1o-ky-eUq"/>
+                            <constraint firstItem="bh6-ch-Zls" firstAttribute="leading" secondItem="fc3-LQ-va9" secondAttribute="trailing" constant="64" id="RT5-hR-oBL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bsn-nc-83s" secondAttribute="trailing" constant="400" id="SfE-NZ-bRw"/>
+                            <constraint firstItem="Kgp-tJ-CX3" firstAttribute="top" secondItem="bsn-nc-83s" secondAttribute="bottom" constant="159" id="XtC-Ie-ZCJ"/>
+                            <constraint firstItem="bsn-nc-83s" firstAttribute="top" secondItem="fBQ-WZ-yhb" secondAttribute="bottom" constant="60" id="cVg-aC-AhS"/>
+                            <constraint firstItem="Ifu-rz-zyy" firstAttribute="leading" secondItem="hP4-wx-wTA" secondAttribute="leadingMargin" id="gEJ-ed-xMH"/>
+                            <constraint firstItem="ZGM-q3-n82" firstAttribute="top" secondItem="Kgp-tJ-CX3" secondAttribute="bottom" constant="98" id="hp0-Ui-8fr"/>
+                            <constraint firstItem="Kza-mB-oza" firstAttribute="leading" secondItem="hP4-wx-wTA" secondAttribute="leadingMargin" id="lV7-CU-Wb3"/>
+                            <constraint firstItem="fBQ-WZ-yhb" firstAttribute="top" secondItem="bh6-ch-Zls" secondAttribute="bottom" constant="71.5" id="oBn-Mw-x3W"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fBQ-WZ-yhb" secondAttribute="trailing" constant="400" id="yH9-6B-orG"/>
+                            <constraint firstItem="fc3-LQ-va9" firstAttribute="leading" secondItem="hP4-wx-wTA" secondAttribute="leadingMargin" id="zf0-zc-zJI"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="F3w-6w-hVG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fdv-4j-ySk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2180" y="-792"/>
+            <point key="canvasLocation" x="2180" y="-792.05397301349331"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="h7S-5O-I2d">

@@ -16,6 +16,9 @@
 		E5103F9B1E9C26850038E43F /* JobSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5103F9A1E9C26850038E43F /* JobSearchController.swift */; };
 		E5103F9D1E9C26E50038E43F /* TechnicalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5103F9C1E9C26E50038E43F /* TechnicalController.swift */; };
 		E5103F9F1E9C26FB0038E43F /* NetworkingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5103F9E1E9C26FB0038E43F /* NetworkingController.swift */; };
+		E5103FA11E9C3A130038E43F /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5103FA01E9C3A130038E43F /* Post.swift */; };
+		E5103FA31E9C3A8A0038E43F /* CloudKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5103FA21E9C3A8A0038E43F /* CloudKit.swift */; };
+		E5103FA51E9C3E4F0038E43F /* JobSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5103FA41E9C3E4F0038E43F /* JobSearch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		E5103F9A1E9C26850038E43F /* JobSearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobSearchController.swift; sourceTree = "<group>"; };
 		E5103F9C1E9C26E50038E43F /* TechnicalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TechnicalController.swift; sourceTree = "<group>"; };
 		E5103F9E1E9C26FB0038E43F /* NetworkingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingController.swift; sourceTree = "<group>"; };
+		E5103FA01E9C3A130038E43F /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		E5103FA21E9C3A8A0038E43F /* CloudKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKit.swift; sourceTree = "<group>"; };
+		E5103FA41E9C3E4F0038E43F /* JobSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobSearch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,8 @@
 		501CB3CF1E9BF1D8006C98AC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E5103FA41E9C3E4F0038E43F /* JobSearch.swift */,
+				E5103FA01E9C3A130038E43F /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -93,6 +101,7 @@
 		501CB3D11E9BF1F4006C98AC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E5103FA21E9C3A8A0038E43F /* CloudKit.swift */,
 				E5103F9A1E9C26850038E43F /* JobSearchController.swift */,
 				E5103F9C1E9C26E50038E43F /* TechnicalController.swift */,
 				E5103F9E1E9C26FB0038E43F /* NetworkingController.swift */,
@@ -203,6 +212,9 @@
 				501CB3BE1E9BF1C0006C98AC /* AppDelegate.swift in Sources */,
 				E5103F9B1E9C26850038E43F /* JobSearchController.swift in Sources */,
 				501CB3D81E9BF2CA006C98AC /* HomeViewController.swift in Sources */,
+				E5103FA51E9C3E4F0038E43F /* JobSearch.swift in Sources */,
+				E5103FA11E9C3A130038E43F /* Post.swift in Sources */,
+				E5103FA31E9C3A8A0038E43F /* CloudKit.swift in Sources */,
 				E5103F9D1E9C26E50038E43F /* TechnicalController.swift in Sources */,
 				E5103F9F1E9C26FB0038E43F /* NetworkingController.swift in Sources */,
 			);
