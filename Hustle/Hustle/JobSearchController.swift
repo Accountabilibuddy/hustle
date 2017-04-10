@@ -1,16 +1,18 @@
 //
-//  HomeViewController.swift
+//  JobSearchController.swift
 //  Hustle
 //
-//  Created by Eve Denison on 4/10/17.
+//  Created by Kyle Hillman on 4/10/17.
 //  Copyright © 2017 Eve Denison. All rights reserved.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
-    
+class JobSearchController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
     }
+
 }

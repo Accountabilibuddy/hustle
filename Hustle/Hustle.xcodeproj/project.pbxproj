@@ -13,6 +13,9 @@
 		501CB3C81E9BF1C0006C98AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 501CB3C61E9BF1C0006C98AC /* LaunchScreen.storyboard */; };
 		501CB3D61E9BF264006C98AC /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501CB3D51E9BF264006C98AC /* CloudKit.framework */; };
 		501CB3D81E9BF2CA006C98AC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501CB3D71E9BF2CA006C98AC /* HomeViewController.swift */; };
+		E5103F9B1E9C26850038E43F /* JobSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5103F9A1E9C26850038E43F /* JobSearchController.swift */; };
+		E5103F9D1E9C26E50038E43F /* TechnicalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5103F9C1E9C26E50038E43F /* TechnicalController.swift */; };
+		E5103F9F1E9C26FB0038E43F /* NetworkingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5103F9E1E9C26FB0038E43F /* NetworkingController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		501CB3D31E9BF25F006C98AC /* Hustle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hustle.entitlements; sourceTree = "<group>"; };
 		501CB3D51E9BF264006C98AC /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		501CB3D71E9BF2CA006C98AC /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E5103F9A1E9C26850038E43F /* JobSearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobSearchController.swift; sourceTree = "<group>"; };
+		E5103F9C1E9C26E50038E43F /* TechnicalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TechnicalController.swift; sourceTree = "<group>"; };
+		E5103F9E1E9C26FB0038E43F /* NetworkingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,9 @@
 		501CB3D11E9BF1F4006C98AC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E5103F9A1E9C26850038E43F /* JobSearchController.swift */,
+				E5103F9C1E9C26E50038E43F /* TechnicalController.swift */,
+				E5103F9E1E9C26FB0038E43F /* NetworkingController.swift */,
 				501CB3D71E9BF2CA006C98AC /* HomeViewController.swift */,
 			);
 			name = Controller;
@@ -192,7 +201,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				501CB3BE1E9BF1C0006C98AC /* AppDelegate.swift in Sources */,
+				E5103F9B1E9C26850038E43F /* JobSearchController.swift in Sources */,
 				501CB3D81E9BF2CA006C98AC /* HomeViewController.swift in Sources */,
+				E5103F9D1E9C26E50038E43F /* TechnicalController.swift in Sources */,
+				E5103F9F1E9C26FB0038E43F /* NetworkingController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +372,7 @@
 				501CB3CE1E9BF1C0006C98AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
