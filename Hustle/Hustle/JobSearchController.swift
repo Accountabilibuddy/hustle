@@ -9,9 +9,15 @@
 import UIKit
 
 class JobSearchController: UIViewController {
+    
+    var array : [String] = []
+
+    let jobSearch : JobSearch
 
     @IBAction func fiveCompaniesSwitch(_ sender: Any) {
-        
+        if jobSearch.choiceOne == true {
+            array.append("Applied for five jobs")
+        }
     }
     @IBAction func highVolume(_ sender: Any) {
         
@@ -20,7 +26,6 @@ class JobSearchController: UIViewController {
         
     }
 
-    let jobSearch : JobSearch
     
     override func viewDidLoad() {
         super.viewDidLoad()
