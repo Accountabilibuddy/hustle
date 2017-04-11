@@ -30,7 +30,7 @@ class CloudKit {
                 completion(false)
             }
             if let record = record {
-                print("printed line 33 \(record)")
+                print("record \(record)")
                 completion(true)
             } else {
                 completion(false)
@@ -103,7 +103,42 @@ class CloudKit {
             }
         }
     }
+    
+    func getNetworkingRecords(completion: @escaping NetworkingCompletion) {
+        let recordQuery = CKQuery(recordType: "Networking", predicate: NSPredicate(value: true))
+        
+        self.publicDatabase.perform(recordQuery, inZoneWith: nil) { (records, error) in
+            if  error != nil {
+                OperationQueue.main.addOperation {
+                    completion(nil)
+                }
+            }
+            
+            if let records = records {
+                var networkRecord = [Networking]()
+                
+                for record in records {
+                    if let infoCoffee = record["infoCoffee"] as? Bool,
+                        let meetUps = record["meetUps"] as? Bool,
+                        let visitCompanies = record["visitCompanies"] as? Bool,
+                        let followUp = record["followUp"] as? Bool,
+                        let networkingNotes = record["networkingNotes"] as? String,
+                        let date = record["date"] as? Date
+                        
+                    {
+                        let newRecord = Networking(infoCoffee: infoCoffee, meetupEvents: meetUps, visitCompanies: visitCompanies, followUp: followUp, networkNotes: networkingNotes, date: date)
+                        networkRecord.append(newRecord)
+                    }
+                }
+                OperationQueue.main.addOperation {
+                    completion(networkRecord)
+                }
+            }
+        }
+    }
 }
+
+
 
 
 
