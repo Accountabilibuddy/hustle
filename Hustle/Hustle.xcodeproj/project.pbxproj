@@ -157,7 +157,7 @@
 				TargetAttributes = {
 					501CB3B91E9BF1BF006C98AC = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = UG659HW99G;
+						DevelopmentTeam = 6572E988F5;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
@@ -338,7 +338,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Hustle/Hustle.entitlements;
-				DEVELOPMENT_TEAM = UG659HW99G;
+				DEVELOPMENT_TEAM = 6572E988F5;
 				INFOPLIST_FILE = Hustle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.evedenison.Hustle;
@@ -352,7 +352,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Hustle/Hustle.entitlements;
-				DEVELOPMENT_TEAM = UG659HW99G;
+				DEVELOPMENT_TEAM = 6572E988F5;
 				INFOPLIST_FILE = Hustle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.evedenison.Hustle;

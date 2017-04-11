@@ -14,33 +14,28 @@ typealias JobSearchCompletion = ([JobSearch]?)->()
 
 class CloudKit {
     
-//    let shared = CloudKit()
-//    
-//    let container = CKContainer.default()
-//    
-//    var publicDatabase : CKDatabase {
-//        return container.publicCloudDatabase
-//    }
-//    
-//    func save(jobSearch: JobSearch, completion: @escaping SuccessCompletion) {
-//        do {
-//            if let record = try JobSearch.recordFor(post: post) {
-//                publicDatabase.save(record, completionHandler: { (record, error) in
-//                    if error != nil {
-//                        completion(false)
-//                    }
-//                    if let record = record {
-//                        print(record)
-//                        completion(true)
-//                    } else {
-//                        completion(false)
-//                    }
-//                })
-//            }
-//        } catch {
-//            print(error)
-//        }
-//    }
+    static let shared = CloudKit()
+    
+    let container = CKContainer.default()
+    
+    var publicDatabase : CKDatabase {
+        return container.publicCloudDatabase
+    }
+    
+    func save(record: CKRecord, completion: @escaping SuccessCompletion) {
+        publicDatabase.save(record, completionHandler: { (record, error) in
+            if error != nil {
+                completion(false)
+            }
+            if let record = record {
+                print(record)
+                completion(true)
+            } else {
+                completion(false)
+            }
+            
+        })
+    }
 //    
 //    func getPosts(completion: @escaping PostsCompletion) {
 //        let postQuery = CKQuery(recordType: "Post", predicate: NSPredicate(value: true))

@@ -12,9 +12,6 @@ class JobSearchController: UIViewController {
 
     var jobSearch : JobSearch!
     
- 
-
-    
     @IBOutlet weak var didHighVolumeSearch: UISwitch!
     
     @IBOutlet weak var targetedSearch: UISwitch!
@@ -37,6 +34,10 @@ class JobSearchController: UIViewController {
         let companiesAppliedTo = self.companiesAppliedTo.text ?? ""
         
         let currentJobSearch = JobSearch.init(didHighVolumeSearch: didHighVolumeSearch, targetedSearch: targetedSearch, targetedEvents: targetedEvents, companiesAppliedTo: companiesAppliedTo)
+        if let recordSaved = JobSearch.recordFor(jobSearch: currentJobSearch){
+            CloudKit.shared.save(record: recordSaved, completion: { (success) in
+                print("Success Saving Record.\(success)")
+            })
+        }
     }
-
 }
