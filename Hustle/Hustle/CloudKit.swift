@@ -13,6 +13,7 @@ typealias SuccessCompletion = (Bool) -> ()
 typealias JobSearchCompletion = ([JobSearch]?)->()
 typealias TechnicalCompletion = ([Technical]?)->()
 typealias NetworkingCompletion = ([Networking]?)->()
+typealias UserCompletion = ([User])->()
 
 class CloudKit {
     
@@ -136,7 +137,21 @@ class CloudKit {
             }
         }
     }
+    
+    func getUserID(){
+        CKContainer.default().requestApplicationPermission(.userDiscoverability) { (status, error) in
+            CKContainer.default().fetchUserRecordID(completionHandler: { (record, error) in
+                CKContainer.default().discoverUserIdentity(withUserRecordID: record!, completionHandler: { (userID, error) in
+                    print(userID?.hasiCloudAccount)
+                    print((userID?.nameComponents?.givenName)! + " " + (userID?.nameComponents?.familyName)!)
+                })
+            })
+        }
+    }
+    
+    
 }
+
 
 
 
