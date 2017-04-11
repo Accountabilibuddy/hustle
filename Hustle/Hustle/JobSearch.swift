@@ -38,6 +38,7 @@ extension JobSearch {
         record.setValue(jobSearch.targetedSearch, forKey: "targetedSearch")
         record.setValue(jobSearch.targetedEvents, forKey: "targetedEvents")
         record.setValue(jobSearch.companiesAppliedTo, forKey: "companiesAppliedTo")
+        record.setValue(jobSearch.date, forKey: "date")
         
         return record
     }

@@ -13,6 +13,7 @@
 		501CB3C81E9BF1C0006C98AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 501CB3C61E9BF1C0006C98AC /* LaunchScreen.storyboard */; };
 		501CB3D61E9BF264006C98AC /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501CB3D51E9BF264006C98AC /* CloudKit.framework */; };
 		501CB3D81E9BF2CA006C98AC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501CB3D71E9BF2CA006C98AC /* HomeViewController.swift */; };
+		50E5909C1E9C660E00B18F1F /* Technical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E5909B1E9C660E00B18F1F /* Technical.swift */; };
 		E5103F9B1E9C26850038E43F /* JobSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5103F9A1E9C26850038E43F /* JobSearchController.swift */; };
 		E5103F9D1E9C26E50038E43F /* TechnicalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5103F9C1E9C26E50038E43F /* TechnicalController.swift */; };
 		E5103F9F1E9C26FB0038E43F /* NetworkingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5103F9E1E9C26FB0038E43F /* NetworkingController.swift */; };
@@ -30,6 +31,7 @@
 		501CB3D31E9BF25F006C98AC /* Hustle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hustle.entitlements; sourceTree = "<group>"; };
 		501CB3D51E9BF264006C98AC /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		501CB3D71E9BF2CA006C98AC /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		50E5909B1E9C660E00B18F1F /* Technical.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Technical.swift; sourceTree = "<group>"; };
 		E5103F9A1E9C26850038E43F /* JobSearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobSearchController.swift; sourceTree = "<group>"; };
 		E5103F9C1E9C26E50038E43F /* TechnicalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TechnicalController.swift; sourceTree = "<group>"; };
 		E5103F9E1E9C26FB0038E43F /* NetworkingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingController.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 		501CB3CF1E9BF1D8006C98AC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				50E5909B1E9C660E00B18F1F /* Technical.swift */,
 				E5103FA41E9C3E4F0038E43F /* JobSearch.swift */,
 			);
 			name = Model;
@@ -157,7 +160,7 @@
 				TargetAttributes = {
 					501CB3B91E9BF1BF006C98AC = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = 6572E988F5;
+						DevelopmentTeam = UG659HW99G;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
@@ -211,6 +214,7 @@
 				501CB3D81E9BF2CA006C98AC /* HomeViewController.swift in Sources */,
 				E5103FA51E9C3E4F0038E43F /* JobSearch.swift in Sources */,
 				E5103FA31E9C3A8A0038E43F /* CloudKit.swift in Sources */,
+				50E5909C1E9C660E00B18F1F /* Technical.swift in Sources */,
 				E5103F9D1E9C26E50038E43F /* TechnicalController.swift in Sources */,
 				E5103F9F1E9C26FB0038E43F /* NetworkingController.swift in Sources */,
 			);
@@ -338,7 +342,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Hustle/Hustle.entitlements;
-				DEVELOPMENT_TEAM = 6572E988F5;
+				DEVELOPMENT_TEAM = UG659HW99G;
 				INFOPLIST_FILE = Hustle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.evedenison.Hustle;
@@ -352,7 +356,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Hustle/Hustle.entitlements;
-				DEVELOPMENT_TEAM = 6572E988F5;
+				DEVELOPMENT_TEAM = UG659HW99G;
 				INFOPLIST_FILE = Hustle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.evedenison.Hustle;
