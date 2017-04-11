@@ -12,6 +12,8 @@ class JobSearchController: UIViewController {
 
     var jobSearch : JobSearch!
     
+    var allJobSearchRecords = [JobSearch]()
+    
     @IBOutlet weak var didHighVolumeSearch: UISwitch!
     
     @IBOutlet weak var targetedSearch: UISwitch!
@@ -23,6 +25,22 @@ class JobSearchController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        update()
+    }
+    
+    func update() {
+        CloudKit.shared.getJobSearchRecords { (jobSearchRecord) in
+            if let jobSearchRecord = jobSearchRecord {
+                self.allJobSearchRecords = jobSearchRecord
+                print("Fetched job search records \(jobSearchRecord[0].didHighVolumeSearch)")
+            }
+        }
+        
     }
     
     

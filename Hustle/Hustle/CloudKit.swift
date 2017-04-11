@@ -30,7 +30,7 @@ class CloudKit {
                 completion(false)
             }
             if let record = record {
-                print(record)
+                print("printed line 33 \(record)")
                 completion(true)
             } else {
                 completion(false)
