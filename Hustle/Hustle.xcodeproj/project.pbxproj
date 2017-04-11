@@ -22,6 +22,8 @@
 		E5103FA31E9C3A8A0038E43F /* CloudKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5103FA21E9C3A8A0038E43F /* CloudKit.swift */; };
 		E5103FA51E9C3E4F0038E43F /* JobSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5103FA41E9C3E4F0038E43F /* JobSearch.swift */; };
 		E5CCCEA21E9D32F60069C825 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CCCEA11E9D32F60069C825 /* Networking.swift */; };
+		E5CCCEA41E9D55230069C825 /* JobSearchNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5CCCEA31E9D55230069C825 /* JobSearchNib.xib */; };
+		E5CCCEA61E9D570C0069C825 /* JobSearchNibCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CCCEA51E9D570C0069C825 /* JobSearchNibCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		E5103FA21E9C3A8A0038E43F /* CloudKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKit.swift; sourceTree = "<group>"; };
 		E5103FA41E9C3E4F0038E43F /* JobSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobSearch.swift; sourceTree = "<group>"; };
 		E5CCCEA11E9D32F60069C825 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		E5CCCEA31E9D55230069C825 /* JobSearchNib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobSearchNib.xib; sourceTree = "<group>"; };
+		E5CCCEA51E9D570C0069C825 /* JobSearchNibCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobSearchNibCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				501CB3C11E9BF1C0006C98AC /* Main.storyboard */,
+				E5CCCEA31E9D55230069C825 /* JobSearchNib.xib */,
+				E5CCCEA51E9D570C0069C825 /* JobSearchNibCell.swift */,
 				501CB3C61E9BF1C0006C98AC /* LaunchScreen.storyboard */,
 				501CB3BD1E9BF1C0006C98AC /* AppDelegate.swift */,
 			);
@@ -208,6 +214,7 @@
 				501CB3C81E9BF1C0006C98AC /* LaunchScreen.storyboard in Resources */,
 				501CB3C51E9BF1C0006C98AC /* Assets.xcassets in Resources */,
 				501CB3C31E9BF1C0006C98AC /* Main.storyboard in Resources */,
+				E5CCCEA41E9D55230069C825 /* JobSearchNib.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +228,7 @@
 				501CB3BE1E9BF1C0006C98AC /* AppDelegate.swift in Sources */,
 				E5CCCEA21E9D32F60069C825 /* Networking.swift in Sources */,
 				E5103F9B1E9C26850038E43F /* JobSearchController.swift in Sources */,
+				E5CCCEA61E9D570C0069C825 /* JobSearchNibCell.swift in Sources */,
 				501CB3D81E9BF2CA006C98AC /* HomeViewController.swift in Sources */,
 				E5103FA51E9C3E4F0038E43F /* JobSearch.swift in Sources */,
 				503418AC1E9D4259008BC01C /* ProfileController.swift in Sources */,

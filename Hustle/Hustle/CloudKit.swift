@@ -30,7 +30,7 @@ class CloudKit {
                 completion(false)
             }
             if let record = record {
-                print(record)
+                print("printed line 33 \(record)")
                 completion(true)
             } else {
                 completion(false)
@@ -70,4 +70,62 @@ class CloudKit {
             }
         }
     }
+    
+    func getTechnicalRecords(completion: @escaping TechnicalCompletion) {
+        let recordQuery = CKQuery(recordType: "Technical", predicate: NSPredicate(value: true))
+        
+        self.publicDatabase.perform(recordQuery, inZoneWith: nil) { (records, error) in
+            if  error != nil {
+                OperationQueue.main.addOperation {
+                    completion(nil)
+                }
+            }
+            
+            if let records = records {
+                var technicalRecord = [Technical]()
+                
+                for record in records {
+                    if let committedToGitHub = record["committedToGitHub"] as? Bool,
+                        let codingWars = record["codingWars"] as? Bool,
+                        let whiteBoarding = record["whiteBoarding"] as? Bool,
+                        let interviewQuestions = record["interviewQuestions"] as? Bool,
+                        let techNotes = record["techNotes"] as? String,
+                        let date = record["date"] as? Date
+                        
+                    {
+                        let newRecord = Technical(committedToGitHub: committedToGitHub, codingWars: codingWars, whiteBoarding: whiteBoarding, interviewQuestions: interviewQuestions,  techNotes: techNotes, date: date)
+                        technicalRecord.append(newRecord)
+                    }
+                }
+                OperationQueue.main.addOperation {
+                    completion(technicalRecord)
+                }
+            }
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
