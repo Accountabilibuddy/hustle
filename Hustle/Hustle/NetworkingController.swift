@@ -17,9 +17,26 @@ class NetworkingController: UIViewController {
     @IBOutlet weak var networkingNotes: UITextView!
     
     var networking : Networking!
+    var allNetworkingRecords = [Networking]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        update()
+    }
+    
+    func update() {
+        CloudKit.shared.getNetworkingRecords { (networkingSearchRecord) in
+            if let networkingSearchRecord = networkingSearchRecord {
+                self.allNetworkingRecords = networkingSearchRecord
+                print("Fetched networking search records \(networkingSearchRecord[0].infoCoffee)")
+            }
+        }
+        
     }
 
     @IBAction func saveButtonPressed(_ sender: Any) {

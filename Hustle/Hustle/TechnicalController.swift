@@ -10,7 +10,10 @@ import UIKit
 
 class TechnicalController: UIViewController {
     
+   
     var technical : Technical!
+    
+    var allTechnicalRecords = [Technical]()
 
     @IBOutlet weak var committedToGitHub: UISwitch!
     
@@ -25,6 +28,23 @@ class TechnicalController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        update()
+    }
+    
+    func update() {
+        CloudKit.shared.getTechnicalRecords { (technicalSearchRecord) in
+            if let technicalSearchRecord = technicalSearchRecord {
+                self.allTechnicalRecords = technicalSearchRecord
+                print("Fetched technical search records \(technicalSearchRecord[0].committedToGitHub)")
+            }
+        }
+        
+    }
+
     
     @IBAction func technicalSaveSwitch(_ sender: Any) {
         
