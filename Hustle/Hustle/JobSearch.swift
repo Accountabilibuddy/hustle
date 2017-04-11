@@ -7,19 +7,39 @@
 //
 
 import Foundation
+import CloudKit
 
 class JobSearch {
     
-    let choiceOne : Bool
-    let choiceTwo : Bool
-    let choiceThree : Bool
-    var textField : String
+    var didHighVolumeSearch : Bool
+    var targetedSearch : Bool
+    var targetedEvents : Bool
+    var companiesAppliedTo : String?
     
-    init(choiceOne: Bool, choiceTwo: Bool, choiceThree: Bool, textField: String) {
+    let date: Date
+    
+    init(didHighVolumeSearch: Bool, targetedSearch: Bool, targetedEvents: Bool, companiesAppliedTo: String, date: Date = Date()) {
         
-        self.choiceOne = choiceOne
-        self.choiceTwo = choiceTwo
-        self.choiceThree = choiceThree
-        self.textField = textField
+        self.didHighVolumeSearch = didHighVolumeSearch
+        self.targetedSearch = targetedSearch
+        self.targetedEvents = targetedEvents
+        self.companiesAppliedTo = companiesAppliedTo
+        
+        self.date = date
     }
+}
+
+extension JobSearch {
+    
+    class func recordFor(jobSearch: JobSearch) -> CKRecord? {
+        let record = CKRecord(recordType: "JobSearch")
+
+        record.setValue(jobSearch.didHighVolumeSearch, forKey: "didHighVolumeSearch")
+        record.setValue(jobSearch.targetedSearch, forKey: "targetedSearch")
+        record.setValue(jobSearch.targetedEvents, forKey: "targetedEvents")
+        record.setValue(jobSearch.companiesAppliedTo, forKey: "companiesAppliedTo")
+        
+        return record
+    }
+
 }

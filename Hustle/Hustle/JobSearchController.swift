@@ -9,32 +9,34 @@
 import UIKit
 
 class JobSearchController: UIViewController {
+
+    var jobSearch : JobSearch!
     
-    var array : [String] = []
+ 
 
-    let jobSearch : JobSearch
-
-    @IBAction func fiveCompaniesSwitch(_ sender: Any) {
-        if jobSearch.choiceOne == true {
-            array.append("Applied for five jobs")
-        }
-    }
-    @IBAction func highVolume(_ sender: Any) {
-        
-    }
-    @IBAction func Research(_ sender: Any) {
-        
-    }
-
+    
+    @IBOutlet weak var didHighVolumeSearch: UISwitch!
+    
+    @IBOutlet weak var targetedSearch: UISwitch!
+    
+    @IBOutlet weak var targetedEvents: UISwitch!
+    
+    @IBOutlet weak var companiesAppliedTo: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if let jobSearch = jobSearch {
-        
-        }
-        
     
+    }
+    
+    
+    @IBAction func saveJobSearch(_ sender: Any) {
+        
+        let didHighVolumeSearch = self.didHighVolumeSearch.isOn
+        let targetedSearch = self.targetedSearch.isOn
+        let targetedEvents = self.targetedEvents.isOn
+        let companiesAppliedTo = self.companiesAppliedTo.text ?? ""
+        
+        let currentJobSearch = JobSearch.init(didHighVolumeSearch: didHighVolumeSearch, targetedSearch: targetedSearch, targetedEvents: targetedEvents, companiesAppliedTo: companiesAppliedTo)
     }
 
 }
