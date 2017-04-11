@@ -19,6 +19,7 @@
 		E5103F9F1E9C26FB0038E43F /* NetworkingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5103F9E1E9C26FB0038E43F /* NetworkingController.swift */; };
 		E5103FA31E9C3A8A0038E43F /* CloudKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5103FA21E9C3A8A0038E43F /* CloudKit.swift */; };
 		E5103FA51E9C3E4F0038E43F /* JobSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5103FA41E9C3E4F0038E43F /* JobSearch.swift */; };
+		E5CCCEA21E9D32F60069C825 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CCCEA11E9D32F60069C825 /* Networking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		E5103F9E1E9C26FB0038E43F /* NetworkingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingController.swift; sourceTree = "<group>"; };
 		E5103FA21E9C3A8A0038E43F /* CloudKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKit.swift; sourceTree = "<group>"; };
 		E5103FA41E9C3E4F0038E43F /* JobSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobSearch.swift; sourceTree = "<group>"; };
+		E5CCCEA11E9D32F60069C825 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			children = (
 				50E5909B1E9C660E00B18F1F /* Technical.swift */,
 				E5103FA41E9C3E4F0038E43F /* JobSearch.swift */,
+				E5CCCEA11E9D32F60069C825 /* Networking.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				501CB3BE1E9BF1C0006C98AC /* AppDelegate.swift in Sources */,
+				E5CCCEA21E9D32F60069C825 /* Networking.swift in Sources */,
 				E5103F9B1E9C26850038E43F /* JobSearchController.swift in Sources */,
 				501CB3D81E9BF2CA006C98AC /* HomeViewController.swift in Sources */,
 				E5103FA51E9C3E4F0038E43F /* JobSearch.swift in Sources */,
