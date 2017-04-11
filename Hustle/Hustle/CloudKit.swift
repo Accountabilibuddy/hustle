@@ -11,6 +11,8 @@ import CloudKit
 
 typealias SuccessCompletion = (Bool) -> ()
 typealias JobSearchCompletion = ([JobSearch]?)->()
+typealias TechnicalCompletion = ([Technical]?)->()
+typealias NetworkingCompletion = ([Networking]?)->()
 
 class CloudKit {
     
@@ -36,33 +38,36 @@ class CloudKit {
             
         })
     }
-//    
-//    func getPosts(completion: @escaping PostsCompletion) {
-//        let postQuery = CKQuery(recordType: "Post", predicate: NSPredicate(value: true))
-//        
-//        self.privateDatabase.perform(postQuery, inZoneWith: nil) { (records, error) in
-//            if  error != nil {
-//                OperationQueue.main.addOperation {
-//                    completion(nil)
-//                }
-//            }
-//            
-//            if let records = records {
-//                var posts = [Post]()
-//                for record in records {
-//                    let date = record.creationDate
-//                    if let asset = record["jobSearch"] as? CKAsset {
-//                        let path = asset.fileURL.path
-//                        if let image = UIImage(contentsOfFile: path) {
-//                            let newPost = Post(image: image, date: date)
-//                            posts.append(newPost)
-//                        }
-//                    }
-//                }
-//                OperationQueue.main.addOperation {
-//                    completion(posts)
-//                }
-//            }
-//        }
-//    }
+    
+    func getJobSearchRecords(completion: @escaping JobSearchCompletion) {
+        let recordQuery = CKQuery(recordType: "JobSearch", predicate: NSPredicate(value: true))
+        
+        self.publicDatabase.perform(recordQuery, inZoneWith: nil) { (records, error) in
+            if  error != nil {
+                OperationQueue.main.addOperation {
+                    completion(nil)
+                }
+            }
+            
+            if let records = records {
+                var jobSearchRecord = [JobSearch]()
+                
+                for record in records {
+                    if let didHighVolumeSearch = record["didHighVolumeSearch"] as? Bool,
+                        let targetedSearch = record["targetedSearch"] as? Bool,
+                        let targetedEvents = record["targetedEvents"] as? Bool,
+                        let companiesAppliedTo = record["companiesAppliedTo"] as? String,
+                        let date = record["date"] as? Date
+                        
+                    {
+                        let newRecord = JobSearch(didHighVolumeSearch: didHighVolumeSearch, targetedSearch: targetedSearch, targetedEvents: targetedEvents, companiesAppliedTo: companiesAppliedTo, date: date)
+                        jobSearchRecord.append(newRecord)
+                    }
+                }
+                OperationQueue.main.addOperation {
+                    completion(jobSearchRecord)
+                }
+            }
+        }
+    }
 }

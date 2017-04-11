@@ -88,8 +88,8 @@
 		501CB3CF1E9BF1D8006C98AC /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				50E5909B1E9C660E00B18F1F /* Technical.swift */,
 				E5103FA41E9C3E4F0038E43F /* JobSearch.swift */,
+				50E5909B1E9C660E00B18F1F /* Technical.swift */,
 				E5CCCEA11E9D32F60069C825 /* Networking.swift */,
 			);
 			name = Model;
