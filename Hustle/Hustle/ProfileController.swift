@@ -19,9 +19,9 @@ class ProfileController: UIViewController, UINavigationControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        CloudKit.shared.getUserID()
-        self.profileName.text = "Yay! Race Coniditon :)"
-        
+        CloudKit.shared.getUserID { (profileName) in
+            self.profileName.text = profileName
+        }
     }
     
     
@@ -94,7 +94,7 @@ extension ProfileController : UIImagePickerControllerDelegate {
     func saveImageAfterPicking(){
         if let image = self.profileImage.image {
             
-            let newUser = User(profileImage: image)
+            let newUser = User(profileImage: image,displayName: "profilePic")
             
             CloudKit.shared.saveProfileImage(user: newUser, completion: { (success) in
                 if success {

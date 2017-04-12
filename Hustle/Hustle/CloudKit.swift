@@ -14,6 +14,7 @@ typealias JobSearchCompletion = ([JobSearch]?)->()
 typealias TechnicalCompletion = ([Technical]?)->()
 typealias NetworkingCompletion = ([Networking]?)->()
 typealias UserCompletion = ([User])->()
+typealias ProfileName = (String)->()
 
 class CloudKit {
     
@@ -53,7 +54,7 @@ class CloudKit {
                         return
                     }
                     if let record = record {
-                        print("image record is being printed: \(record)")
+//                        print("image record is being printed: \(record)")
                         completion(true)
                     } else {
                         completion(false)
@@ -164,41 +165,18 @@ class CloudKit {
         }
     }
     
-    func getUserID() {
+    func getUserID(completion: @escaping ProfileName) {
         CKContainer.default().requestApplicationPermission(.userDiscoverability) { (status, error) in
             CKContainer.default().fetchUserRecordID(completionHandler: { (record, error) in
                 CKContainer.default().discoverUserIdentity(withUserRecordID: record!, completionHandler: { (userID, error) in
                     print(userID?.hasiCloudAccount ?? "User Name not Defined")
                     self.userName = ((userID?.nameComponents?.givenName)! + " " + (userID?.nameComponents?.familyName)!)
-//                    print(self.userName)
+                    completion(self.userName)
                 })
             })
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

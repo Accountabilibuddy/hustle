@@ -12,9 +12,11 @@ import CloudKit
 class User {
     
     let profileImage : UIImage
+    let displayName : String
     
-    init(profileImage: UIImage) {
+    init(profileImage: UIImage, displayName: String) {
         self.profileImage = profileImage
+        self.displayName = displayName
     }
 }
 
@@ -29,10 +31,17 @@ extension User {
     class func recordFor(user: User) throws -> CKRecord? {
         guard let data = UIImageJPEGRepresentation(user.profileImage, 0.6) else {throw RecordError.writingImageToData}
         
+        
+        
         do{
-            try data.write(to: user.profileImage.path)
             
-            let asset = CKAsset(fileURL: user.profileImage.path)
+            let imagePath = user.profileImage.path.appendingPathComponent(user.displayName)
+            
+            
+            
+            try data.write(to: imagePath)
+            
+            let asset = CKAsset(fileURL: imagePath)
             
             let record = CKRecord(recordType: "ProfileImage")
             

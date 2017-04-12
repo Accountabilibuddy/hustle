@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		01010E141E9E1BFF00B68B90 /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01010E131E9E1BFF00B68B90 /* UIExtensions.swift */; };
+		015854171E9E9A980064E96D /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015854161E9E9A980064E96D /* FoundationExtensions.swift */; };
 		01D39AA01E9D7EFE00EF9198 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D39A9F1E9D7EFE00EF9198 /* User.swift */; };
 		501CB3BE1E9BF1C0006C98AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501CB3BD1E9BF1C0006C98AC /* AppDelegate.swift */; };
 		501CB3C31E9BF1C0006C98AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 501CB3C11E9BF1C0006C98AC /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		01010E131E9E1BFF00B68B90 /* UIExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
+		015854161E9E9A980064E96D /* FoundationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundationExtensions.swift; sourceTree = "<group>"; };
 		01D39A9F1E9D7EFE00EF9198 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		501CB3BA1E9BF1C0006C98AC /* Hustle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hustle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		501CB3BD1E9BF1C0006C98AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,10 +99,11 @@
 			isa = PBXGroup;
 			children = (
 				01D39A9F1E9D7EFE00EF9198 /* User.swift */,
-				01010E131E9E1BFF00B68B90 /* UIExtensions.swift */,
 				E5103FA41E9C3E4F0038E43F /* JobSearch.swift */,
 				50E5909B1E9C660E00B18F1F /* Technical.swift */,
 				E5CCCEA11E9D32F60069C825 /* Networking.swift */,
+				01010E131E9E1BFF00B68B90 /* UIExtensions.swift */,
+				015854161E9E9A980064E96D /* FoundationExtensions.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				E5103FA31E9C3A8A0038E43F /* CloudKit.swift in Sources */,
 				503418AE1E9D43FA008BC01C /* HustleController.swift in Sources */,
 				50E5909C1E9C660E00B18F1F /* Technical.swift in Sources */,
+				015854171E9E9A980064E96D /* FoundationExtensions.swift in Sources */,
 				E5103F9D1E9C26E50038E43F /* TechnicalController.swift in Sources */,
 				01D39AA01E9D7EFE00EF9198 /* User.swift in Sources */,
 				E5103F9F1E9C26FB0038E43F /* NetworkingController.swift in Sources */,
