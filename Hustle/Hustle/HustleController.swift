@@ -11,15 +11,21 @@ import UIKit
 class HustleController: UIViewController {
     
     var allJobSearchRecords = [JobSearch]()
-    
     var allTechnicalRecords = [Technical]()
-    
     var allNetworkingRecords = [Networking]()
+    
 
+
+    @IBOutlet weak var hustleTableView: UITableView!
+    
     override func viewDidLoad() {
-        
         super.viewDidLoad()
         
+        self.hustleTableView.delegate = self
+        self.hustleTableView.dataSource = self
+
+        let jobSearchNibCell = UINib(nibName: JobSearchNibCell.identifier, bundle: nil)
+        self.hustleTableView.register(jobSearchNibCell, forCellReuseIdentifier: JobSearchNibCell.identifier)
     }
     
     
@@ -58,7 +64,54 @@ class HustleController: UIViewController {
             }
         }
     }
-    
-
-
 }
+
+extension HustleController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.allJobSearchRecords.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = hustleTableView.dequeueReusableCell(withIdentifier: JobSearchNibCell.identifier, for: indexPath) as! JobSearchNibCell
+        
+        let record = self.allJobSearchRecords[indexPath.row]
+        
+        cell.record = record
+        
+        return cell
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
