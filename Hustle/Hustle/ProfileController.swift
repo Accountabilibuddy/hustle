@@ -19,8 +19,8 @@ class ProfileController: UIViewController, UINavigationControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        CloudKit.shared.getUserID()
-        self.profileName.text = "Yay! Race Coniditon :)"
+//        CloudKit.shared.getUserID()
+//        self.profileName.text = "Yay! Race Coniditon :)"
         
     }
     

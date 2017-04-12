@@ -325,13 +325,28 @@
                     <view key="view" contentMode="scaleToFill" id="Whk-16-Z09">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UxJ-mp-xX0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UxJ-mp-xX0" firstAttribute="top" secondItem="Whk-16-Z09" secondAttribute="top" id="Z9H-Pw-Ubs"/>
+                            <constraint firstAttribute="trailing" secondItem="UxJ-mp-xX0" secondAttribute="trailing" id="ejc-CK-GsU"/>
+                            <constraint firstItem="UxJ-mp-xX0" firstAttribute="leading" secondItem="Whk-16-Z09" secondAttribute="leading" id="hlu-2j-faQ"/>
+                            <constraint firstItem="LCb-C5-9hP" firstAttribute="top" secondItem="UxJ-mp-xX0" secondAttribute="bottom" id="ivz-xE-5Fy"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Hustle" id="hw0-RF-0lg"/>
+                    <connections>
+                        <outlet property="hustleTableView" destination="UxJ-mp-xX0" id="e6G-f7-dmO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xxw-jd-5tp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1622" y="858"/>
+            <point key="canvasLocation" x="1621.5999999999999" y="857.72113943028489"/>
         </scene>
         <!--Profile-->
         <scene sceneID="77B-wS-O5D">

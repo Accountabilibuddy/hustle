@@ -164,17 +164,17 @@ class CloudKit {
         }
     }
     
-    func getUserID() {
-        CKContainer.default().requestApplicationPermission(.userDiscoverability) { (status, error) in
-            CKContainer.default().fetchUserRecordID(completionHandler: { (record, error) in
-                CKContainer.default().discoverUserIdentity(withUserRecordID: record!, completionHandler: { (userID, error) in
-                    print(userID?.hasiCloudAccount ?? "User Name not Defined")
-                    self.userName = ((userID?.nameComponents?.givenName)! + " " + (userID?.nameComponents?.familyName)!)
-//                    print(self.userName)
-                })
-            })
-        }
-    }
+//    func getUserID() {
+//        CKContainer.default().requestApplicationPermission(.userDiscoverability) { (status, error) in
+//            CKContainer.default().fetchUserRecordID(completionHandler: { (record, error) in
+//                CKContainer.default().discoverUserIdentity(withUserRecordID: record!, completionHandler: { (userID, error) in
+//                    print(userID?.hasiCloudAccount ?? "User Name not Defined")
+//                    self.userName = ((userID?.nameComponents?.givenName)! + " " + (userID?.nameComponents?.familyName)!)
+////                    print(self.userName)
+//                })
+//            })
+//        }
+//    }
 }
 
 
