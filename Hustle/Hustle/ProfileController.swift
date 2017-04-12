@@ -13,7 +13,6 @@ class ProfileController: UIViewController, UINavigationControllerDelegate {
     @IBOutlet weak var profileName: UILabel!
     @IBOutlet weak var profileImage: UIImageView!
     
-    
     let imagePicker = UIImagePickerController()
     
     override func viewDidLoad() {
@@ -21,6 +20,13 @@ class ProfileController: UIViewController, UINavigationControllerDelegate {
         
         CloudKit.shared.getUserID { (profileName) in
             self.profileName.text = profileName
+        }
+        
+        CloudKit.shared.getProfileImageRecord { (image) in
+//            print("this issss image \(image)")
+            if image != nil {
+                self.profileImage.image = image
+            }
         }
     }
     
@@ -88,23 +94,20 @@ extension ProfileController : UIImagePickerControllerDelegate {
                                 self.profileImage.image = image
             }, completion: nil)
         }
-        saveImageAfterPicking()
+        saveImageAfterPicking(image:image)
     }
     
-    func saveImageAfterPicking(){
-        if let image = self.profileImage.image {
+    func saveImageAfterPicking(image: UIImage){
+        let newUser = User(profileImage: image)
+        
+        CloudKit.shared.saveProfileImage(user: newUser, completion: { (success) in
+            if success {
+                print("Profile Image Saved Successfully to the cloud")
+            } else {
+                print("Unsuccessful save of Profile Image to the cloud")
+            }
             
-            let newUser = User(profileImage: image,displayName: "profilePic")
-            
-            CloudKit.shared.saveProfileImage(user: newUser, completion: { (success) in
-                if success {
-                    print("Profile Image Saved Successfully to the cloud")
-                } else {
-                    print("Unsuccessful save of Profile Image to the cloud")
-                }
-                
-            })
-        }
+        })
     }
 }
 
