@@ -19,12 +19,15 @@ class CloudKit {
     
     static let shared = CloudKit()
     
+    var userName = String()
+    
     let container = CKContainer.default()
     
     var publicDatabase : CKDatabase {
         return container.publicCloudDatabase
     }
     
+    //save method for regular records
     func save(record: CKRecord, completion: @escaping SuccessCompletion) {
         publicDatabase.save(record, completionHandler: { (record, error) in
             if error != nil {
@@ -39,6 +42,29 @@ class CloudKit {
             
         })
     }
+    
+    //save method ONLY for profile image
+    func saveProfileImage(user: User, completion: @escaping SuccessCompletion){
+        do {
+            if let record = try User.recordFor(user: user){
+                publicDatabase.save(record, completionHandler: { (record, error) in
+                    if error != nil {
+                        completion(false)
+                        return
+                    }
+                    if let record = record {
+                        print("image record is being printed: \(record)")
+                        completion(true)
+                    } else {
+                        completion(false)
+                    }
+                })
+            }
+        } catch{
+            print(error)
+        }
+    }
+
     
     func getJobSearchRecords(completion: @escaping JobSearchCompletion) {
         let recordQuery = CKQuery(recordType: "JobSearch", predicate: NSPredicate(value: true))
@@ -138,18 +164,17 @@ class CloudKit {
         }
     }
     
-    func getUserID(){
+    func getUserID() {
         CKContainer.default().requestApplicationPermission(.userDiscoverability) { (status, error) in
             CKContainer.default().fetchUserRecordID(completionHandler: { (record, error) in
                 CKContainer.default().discoverUserIdentity(withUserRecordID: record!, completionHandler: { (userID, error) in
-                    print(userID?.hasiCloudAccount)
-                    print((userID?.nameComponents?.givenName)! + " " + (userID?.nameComponents?.familyName)!)
+                    print(userID?.hasiCloudAccount ?? "User Name not Defined")
+                    self.userName = ((userID?.nameComponents?.givenName)! + " " + (userID?.nameComponents?.familyName)!)
+//                    print(self.userName)
                 })
             })
         }
     }
-    
-    
 }
 
 
