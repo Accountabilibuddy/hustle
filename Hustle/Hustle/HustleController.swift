@@ -26,6 +26,7 @@ class HustleController: UIViewController {
         
         self.hustleTableView.estimatedRowHeight = 50
         self.hustleTableView.rowHeight = UITableViewAutomaticDimension
+        
         CloudKit.shared.getJobSearchRecords { (jobSearch) in
             OperationQueue.main.addOperation {
                 self.allJobSearchRecords = jobSearch  ?? []
@@ -45,6 +46,7 @@ class HustleController: UIViewController {
         updateJobSearchRecords()
         updateTechnicalRecords()
         updateNetworkingRecords()
+        self.hustleTableView.reloadData()
             
     }
     
@@ -53,7 +55,6 @@ class HustleController: UIViewController {
             if let jobSearchRecord = jobSearchRecord {
                 self.allJobSearchRecords = jobSearchRecord
                 self.hustleTableView.reloadData()
-//                print("Fetched job search records \(jobSearchRecord[0].didHighVolumeSearch)")
             }
         }
     }
@@ -63,7 +64,6 @@ class HustleController: UIViewController {
             if let technicalSearchRecord = technicalSearchRecord {
                 self.allTechnicalRecords = technicalSearchRecord
                 self.hustleTableView.reloadData()
-//                print("Fetched technical search records \(technicalSearchRecord[0].committedToGitHub)")
             }
         }
     }
@@ -73,7 +73,6 @@ class HustleController: UIViewController {
             if let networkingSearchRecord = networkingSearchRecord {
                 self.allNetworkingRecords = networkingSearchRecord
                 self.hustleTableView.reloadData()
-//                print("Fetched networking search records \(networkingSearchRecord.infoCoffee)")
             }
         }
     }
@@ -90,7 +89,10 @@ extension HustleController: UITableViewDataSource, UITableViewDelegate {
         let cell = hustleTableView.dequeueReusableCell(withIdentifier: JobSearchNibCell.identifier, for: indexPath) as! JobSearchNibCell
         
         let jobSearchRecord = self.allJobSearchRecords[indexPath.row]
-        print(jobSearchRecord.didHighVolumeSearch)
+        print("Did High Volume Search: \(jobSearchRecord.didHighVolumeSearch)")
+        print("Target Search: \(jobSearchRecord.targetedSearch)")
+        print("Target Event: \(jobSearchRecord.targetedEvents)")
+        print("Companies applied to: \(String(describing: jobSearchRecord.companiesAppliedTo))")
         cell.jobSearchRecord = jobSearchRecord
         
         return cell

@@ -24,7 +24,13 @@ class JobSearchNibCell: UITableViewCell {
     
     var jobSearchRecord : JobSearch! {
         didSet {
-            self.didHighVolumeSearch.isHidden = jobSearchRecord.didHighVolumeSearch
+            if jobSearchRecord.didHighVolumeSearch {
+                self.didHighVolumeSearch.isHidden = jobSearchRecord.didHighVolumeSearch }
+            if jobSearchRecord.targetedSearch {
+                self.targetedSearch.isHidden = jobSearchRecord.targetedSearch }
+            self.targetedEvents.isHidden = jobSearchRecord.targetedEvents
+            self.companiesAppliedTo.text = jobSearchRecord.companiesAppliedTo
+            self.dateOfJobSearch.text = DateFormatter.localizedString(from: jobSearchRecord.date, dateStyle: .short, timeStyle: .short)
         }
     }
     
