@@ -21,15 +21,10 @@ class JobSearchNibCell: UITableViewCell {
     
     @IBOutlet weak var dateOfJobSearch: UILabel!
     
-    var record : JobSearch!
     
     var jobSearchRecord : JobSearch! {
         didSet {
-            if jobSearchRecord.didHighVolumeSearch {
-                self.didHighVolumeSearch.isHidden = false
-            } else {
-                self.didHighVolumeSearch.isHidden = true
-            }
+            self.didHighVolumeSearch.isHidden = jobSearchRecord.didHighVolumeSearch
         }
     }
     
