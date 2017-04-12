@@ -9,7 +9,24 @@
 import UIKit
 
 class JobSearchNibCell: UITableViewCell {
+    
+//    let jobSearchRecords : JobSearch! {
+//        didSet{
+//            self.didHighVolumeSearch.text =
+//        }
+//    }
 
+    
+    @IBOutlet weak var didHighVolumeSearch: UILabel!
+    
+    @IBOutlet weak var targetedSearch: UILabel!
+    
+    @IBOutlet weak var targetedEvents: UILabel!
+    
+    @IBOutlet weak var companiesAppliedTo: UILabel!
+    
+    @IBOutlet weak var dateOfJobSearch: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,4 +38,11 @@ class JobSearchNibCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+
+//    job.didHighVolumeSearch = "Hellooooo"
+    //        self.targetedSearch = targetedSearch
+    //        self.targetedEvents = targetedEvents
+    //        self.companiesAppliedTo = companiesAppliedTo
+    //
+    //        self.date = date
 }
