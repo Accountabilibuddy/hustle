@@ -6,18 +6,44 @@
 //  Copyright © 2017 Eve Denison. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import CloudKit
 
 class User {
-    let name : String
-    let profileImageURL : String?
     
-    init?(json: [String: Any]) {
-        if let name = json["name"] as? String {
-            self.name = name
-            self.profileImageURL = json["picture"] as? String
-        } else {
-            return nil
-        }
+    let profileImage : UIImage
+    
+    init(profileImage: UIImage) {
+        self.profileImage = profileImage
     }
 }
+
+enum RecordError : Error {
+    case writingImageToData
+    case writingDataToDisk
+}
+
+//MARK: Uploading ProfileImage to the Cloud
+extension User {
+    
+    class func recordFor(user: User) throws -> CKRecord? {
+        guard let data = UIImageJPEGRepresentation(user.profileImage, 0.6) else {throw RecordError.writingImageToData}
+        
+        do{
+            try data.write(to: user.profileImage.path)
+            
+            let asset = CKAsset(fileURL: user.profileImage.path)
+            
+            let record = CKRecord(recordType: "ProfileImage")
+            
+            record.setValue(asset,forKey:"image")
+            
+            return record
+            
+        } catch {
+            throw RecordError.writingDataToDisk
+        }
+        
+    }
+}
+
