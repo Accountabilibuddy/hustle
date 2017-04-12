@@ -12,24 +12,20 @@ class JobSearchNibCell: UITableViewCell {
     
     
     @IBOutlet weak var didHighVolumeSearch: UILabel!
-    
     @IBOutlet weak var targetedSearch: UILabel!
-    
     @IBOutlet weak var targetedEvents: UILabel!
-    
     @IBOutlet weak var companiesAppliedTo: UILabel!
-    
     @IBOutlet weak var dateOfJobSearch: UILabel!
     
-    var record : JobSearch!
     
     var jobSearchRecord : JobSearch! {
         didSet {
-            if jobSearchRecord.didHighVolumeSearch {
-                self.didHighVolumeSearch.isHidden = false
-            } else {
-                self.didHighVolumeSearch.isHidden = true
-            }
+            
+            self.didHighVolumeSearch.isHidden = !jobSearchRecord.didHighVolumeSearch
+            self.targetedSearch.isHidden = !jobSearchRecord.targetedSearch
+            self.targetedEvents.isHidden = !jobSearchRecord.targetedEvents
+            self.companiesAppliedTo.text = jobSearchRecord.companiesAppliedTo
+            self.dateOfJobSearch.text = DateFormatter.localizedString(from: jobSearchRecord.date, dateStyle: .short, timeStyle: .short)
         }
     }
     
