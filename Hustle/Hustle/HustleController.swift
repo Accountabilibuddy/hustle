@@ -24,7 +24,7 @@ class HustleController: UIViewController {
         self.hustleTableView.delegate = self
         self.hustleTableView.dataSource = self
         
-        self.hustleTableView.estimatedRowHeight = 50
+        self.hustleTableView.estimatedRowHeight = 150
         self.hustleTableView.rowHeight = UITableViewAutomaticDimension
         
         CloudKit.shared.getJobSearchRecords { (jobSearch) in
@@ -89,10 +89,7 @@ extension HustleController: UITableViewDataSource, UITableViewDelegate {
         let cell = hustleTableView.dequeueReusableCell(withIdentifier: JobSearchNibCell.identifier, for: indexPath) as! JobSearchNibCell
         
         let jobSearchRecord = self.allJobSearchRecords[indexPath.row]
-        print("Did High Volume Search: \(jobSearchRecord.didHighVolumeSearch)")
-        print("Target Search: \(jobSearchRecord.targetedSearch)")
-        print("Target Event: \(jobSearchRecord.targetedEvents)")
-        print("Companies applied to: \(String(describing: jobSearchRecord.companiesAppliedTo))")
+
         cell.jobSearchRecord = jobSearchRecord
         
         return cell
