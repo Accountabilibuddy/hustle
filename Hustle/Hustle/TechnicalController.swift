@@ -13,13 +13,9 @@ class TechnicalController: UIViewController {
     var technical : Technical!
     
     @IBOutlet weak var committedToGitHub: UISwitch!
-    
     @IBOutlet weak var codingWars: UISwitch!
-    
     @IBOutlet weak var whiteBoarding: UISwitch!
-    
     @IBOutlet weak var interviewQuestions: UISwitch!
-    
     @IBOutlet weak var techNotes: UITextView!
     
     override func viewDidLoad() {
