@@ -18,9 +18,11 @@ class ProfileController: UIViewController, UINavigationControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+
         CloudKit.shared.getUserID { (profileName) in
             self.profileName.text = profileName
         }
+
         
         CloudKit.shared.getProfileImageRecord { (image) in
 //            print("this issss image \(image)")

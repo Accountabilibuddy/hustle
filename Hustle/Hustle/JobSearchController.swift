@@ -22,6 +22,8 @@ class JobSearchController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+
     }
     
     @IBAction func saveJobSearch(_ sender: Any) {

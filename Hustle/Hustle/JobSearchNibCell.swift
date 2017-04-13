@@ -10,39 +10,27 @@ import UIKit
 
 class JobSearchNibCell: UITableViewCell {
     
-//    let jobSearchRecords : JobSearch! {
-//        didSet{
-//            self.didHighVolumeSearch.text =
-//        }
-//    }
-
     
     @IBOutlet weak var didHighVolumeSearch: UILabel!
-    
     @IBOutlet weak var targetedSearch: UILabel!
-    
     @IBOutlet weak var targetedEvents: UILabel!
-    
     @IBOutlet weak var companiesAppliedTo: UILabel!
-    
     @IBOutlet weak var dateOfJobSearch: UILabel!
+    
+    
+    var jobSearchRecord : JobSearch! {
+        didSet {
+            
+            self.didHighVolumeSearch.isHidden = !jobSearchRecord.didHighVolumeSearch
+            self.targetedSearch.isHidden = !jobSearchRecord.targetedSearch
+            self.targetedEvents.isHidden = !jobSearchRecord.targetedEvents
+            self.companiesAppliedTo.text = jobSearchRecord.companiesAppliedTo
+            self.dateOfJobSearch.text = DateFormatter.localizedString(from: jobSearchRecord.date, dateStyle: .short, timeStyle: .short)
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
-
-//    job.didHighVolumeSearch = "Hellooooo"
-    //        self.targetedSearch = targetedSearch
-    //        self.targetedEvents = targetedEvents
-    //        self.companiesAppliedTo = companiesAppliedTo
-    //
-    //        self.date = date
 }

@@ -11,15 +11,32 @@ import UIKit
 class HustleController: UIViewController {
     
     var allJobSearchRecords = [JobSearch]()
-    
     var allTechnicalRecords = [Technical]()
-    
     var allNetworkingRecords = [Networking]()
+    
 
+
+    @IBOutlet weak var hustleTableView: UITableView!
+    
     override func viewDidLoad() {
-        
         super.viewDidLoad()
         
+        self.hustleTableView.delegate = self
+        self.hustleTableView.dataSource = self
+        
+        self.hustleTableView.estimatedRowHeight = 150
+        self.hustleTableView.rowHeight = UITableViewAutomaticDimension
+        
+        CloudKit.shared.getJobSearchRecords { (jobSearch) in
+            OperationQueue.main.addOperation {
+                self.allJobSearchRecords = jobSearch  ?? []
+                print(self.allJobSearchRecords.count)
+                self.hustleTableView.reloadData()
+            }
+        }
+
+        let jobSearchNibCell = UINib(nibName: JobSearchNibCell.identifier, bundle: nil)
+        self.hustleTableView.register(jobSearchNibCell, forCellReuseIdentifier: JobSearchNibCell.identifier)
     }
     
     
@@ -29,6 +46,7 @@ class HustleController: UIViewController {
         updateJobSearchRecords()
         updateTechnicalRecords()
         updateNetworkingRecords()
+        self.hustleTableView.reloadData()
             
     }
     
@@ -36,7 +54,7 @@ class HustleController: UIViewController {
         CloudKit.shared.getJobSearchRecords { (jobSearchRecord) in
             if let jobSearchRecord = jobSearchRecord {
                 self.allJobSearchRecords = jobSearchRecord
-//                print("Fetched job search records \(jobSearchRecord[0].didHighVolumeSearch)")
+                self.hustleTableView.reloadData()
             }
         }
     }
@@ -45,7 +63,7 @@ class HustleController: UIViewController {
         CloudKit.shared.getTechnicalRecords { (technicalSearchRecord) in
             if let technicalSearchRecord = technicalSearchRecord {
                 self.allTechnicalRecords = technicalSearchRecord
-//                print("Fetched technical search records \(technicalSearchRecord[0].committedToGitHub)")
+                self.hustleTableView.reloadData()
             }
         }
     }
@@ -54,11 +72,58 @@ class HustleController: UIViewController {
         CloudKit.shared.getNetworkingRecords { (networkingSearchRecord) in
             if let networkingSearchRecord = networkingSearchRecord {
                 self.allNetworkingRecords = networkingSearchRecord
-//                print("Fetched networking search records \(networkingSearchRecord.infoCoffee)")
+                self.hustleTableView.reloadData()
             }
         }
     }
-    
-
-
 }
+
+extension HustleController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.allJobSearchRecords.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = hustleTableView.dequeueReusableCell(withIdentifier: JobSearchNibCell.identifier, for: indexPath) as! JobSearchNibCell
+        
+        let jobSearchRecord = self.allJobSearchRecords[indexPath.row]
+
+        cell.jobSearchRecord = jobSearchRecord
+        
+        return cell
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
