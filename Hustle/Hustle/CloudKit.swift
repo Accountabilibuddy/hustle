@@ -82,14 +82,14 @@ class CloudKit {
             if let records = records {
                 let record = records.first
                 if let asset = record?["userImage"] as? CKAsset {
-                        let path = asset.fileURL.path
-                        if let image = UIImage(contentsOfFile: path){
-                            OperationQueue.main.addOperation {
-                                completion(image)
-                            }
+                    print("ASSET\(asset)") //dont delete this print statement because I dont know
+                    let path = asset.fileURL.path
+                    if let image = UIImage(contentsOfFile: path){
+                        OperationQueue.main.addOperation {
+                            completion(image)
                         }
+                    }
                 }
-                        
             }
         }
     }

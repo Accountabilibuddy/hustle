@@ -51,7 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2280.8000000000002" y="17.541229385307346"/>
+            <point key="canvasLocation" x="2737" y="858"/>
         </scene>
         <!--Hustle-->
         <scene sceneID="hXW-7C-xf9">
@@ -141,7 +141,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1622" y="1619"/>
+            <point key="canvasLocation" x="1622" y="1616"/>
         </scene>
         <!--Job Search-->
         <scene sceneID="4Xl-b2-Gm4">
@@ -362,7 +362,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fdv-4j-ySk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3080.8000000000002" y="-501.04947526236884"/>
+            <point key="canvasLocation" x="3604" y="857"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="h7S-5O-I2d">
@@ -401,7 +401,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TSy-e8-4WQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1244" y="18"/>
+            <point key="canvasLocation" x="1622" y="79"/>
         </scene>
     </scenes>
     <resources>

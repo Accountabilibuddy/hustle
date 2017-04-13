@@ -50,7 +50,6 @@ class HustleController: UIViewController {
             if let jobSearchRecord = jobSearchRecord {
                 self.allJobSearchRecords = jobSearchRecord
                 self.hustleTableView.reloadData()
-                print("Fetched job search records: \(jobSearchRecord[0].didHighVolumeSearch)")
             }
         }
     }
@@ -74,35 +73,3 @@ extension HustleController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
