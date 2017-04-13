@@ -44,7 +44,7 @@ class HustleController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        updateJobSearchRecords()
+            updateJobSearchRecords()
 //        updateTechnicalRecords()
 //        updateNetworkingRecords()
         self.hustleTableView.reloadData()
@@ -56,6 +56,7 @@ class HustleController: UIViewController {
             if let jobSearchRecord = jobSearchRecord {
                 self.allJobSearchRecords = jobSearchRecord
                 self.hustleTableView.reloadData()
+                print("Fetched job search records: \(jobSearchRecord[0].didHighVolumeSearch)")
             }
         }
     }
@@ -91,7 +92,7 @@ extension HustleController: UITableViewDataSource, UITableViewDelegate {
         
         let jobSearchRecord = self.allJobSearchRecords[indexPath.row]
 
-        cell.dailyTasks = jobSearchRecord
+        cell.jobSearchRecords = jobSearchRecord
         
         return cell
     }

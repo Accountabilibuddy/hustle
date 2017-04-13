@@ -28,23 +28,23 @@ class JobSearchNibCell: UITableViewCell {
 
     
     
-    var dailyTasks : JobSearch! {
+    var jobSearchRecords : JobSearch! {
         didSet {
             
-            self.didHighVolumeSearch.isHidden = !dailyTasks.didHighVolumeSearch
-            self.targetedSearch.isHidden = !dailyTasks.targetedSearch
-            self.targetedEvents.isHidden = !dailyTasks.targetedEvents
-            self.committedToGitHub.isHidden = !dailyTasks.committedToGitHub
-            self.codingWars.isHidden = !dailyTasks.codingWars
-            self.whiteBoarding.isHidden = !dailyTasks.whiteBoarding
-            self.interviewQuestions.isHidden = !dailyTasks.interviewQuestions
-            self.infoCoffee.isHidden = !dailyTasks.infoCoffee
-            self.meetups.isHidden = !dailyTasks.meetupEvents
-            self.visitCompanies.isHidden = !dailyTasks.visitCompanies
-            self.followUp.isHidden = !dailyTasks.followUp
+            self.didHighVolumeSearch.isHidden = !jobSearchRecords.didHighVolumeSearch
+            self.targetedSearch.isHidden = !jobSearchRecords.targetedSearch
+            self.targetedEvents.isHidden = !jobSearchRecords.targetedEvents
+            self.committedToGitHub.isHidden = !jobSearchRecords.committedToGitHub
+            self.codingWars.isHidden = !jobSearchRecords.codingWars
+            self.whiteBoarding.isHidden = !jobSearchRecords.whiteBoarding
+            self.interviewQuestions.isHidden = !jobSearchRecords.interviewQuestions
+            self.infoCoffee.isHidden = !jobSearchRecords.infoCoffee
+            self.meetups.isHidden = !jobSearchRecords.meetupEvents
+            self.visitCompanies.isHidden = !jobSearchRecords.visitCompanies
+            self.followUp.isHidden = !jobSearchRecords.followUp
             
-            self.textFieldNotes.text = dailyTasks.textFieldNotes
-            self.date.text = DateFormatter.localizedString(from: (dailyTasks.date), dateStyle: .short, timeStyle: .short)
+            self.textFieldNotes.text = jobSearchRecords.textFieldNotes
+            self.date.text = DateFormatter.localizedString(from: (jobSearchRecords.date), dateStyle: .short, timeStyle: .short)
         }
     }
     

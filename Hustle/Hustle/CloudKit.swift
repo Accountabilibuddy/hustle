@@ -11,8 +11,8 @@ import CloudKit
 
 typealias SuccessCompletion = (Bool) -> ()
 typealias JobSearchCompletion = ([JobSearch]?)->()
-typealias TechnicalCompletion = ([Technical]?)->()
-typealias NetworkingCompletion = ([Networking]?)->()
+//typealias TechnicalCompletion = ([Technical]?)->()
+//typealias NetworkingCompletion = ([Networking]?)->()
 typealias UserCompletion = ([User])->()
 typealias ProfileName = (String)->()
 typealias ProfileImage = (UIImage?)->()
@@ -122,14 +122,14 @@ class CloudKit {
                         let whiteBoarding = record["whiteBoarding"] as? Bool,
                         let interviewQuestions = record["interviewQuestions"] as? Bool,
                         let infoCoffee = record["infoCoffee"] as? Bool,
-                        let meetUps = record["meetUps"] as? Bool,
+                        let meetupEvents = record["meetupEvents"] as? Bool,
                         let visitCompanies = record["visitCompanies"] as? Bool,
                         let followUp = record["followUp"] as? Bool,
                         let textFieldNotes = record["textFieldNotes"] as? String,
                         let date = record["date"] as? Date
                         
                     {
-                        let newRecord = JobSearch(didHighVolumeSearch: didHighVolumeSearch, targetedSearch: targetedSearch, targetedEvents: targetedEvents, committedToGitHub: committedToGitHub, codingWars: codingWars, whiteBoarding: whiteBoarding, interviewQuestions: interviewQuestions, infoCoffee: infoCoffee, meetupEvents: meetUps, visitCompanies: visitCompanies, followUp: followUp, textFieldNotes: textFieldNotes, date: date)
+                        let newRecord = JobSearch(didHighVolumeSearch: didHighVolumeSearch, targetedSearch: targetedSearch, targetedEvents: targetedEvents, committedToGitHub: committedToGitHub, codingWars: codingWars, whiteBoarding: whiteBoarding, interviewQuestions: interviewQuestions, infoCoffee: infoCoffee, meetupEvents: meetupEvents, visitCompanies: visitCompanies, followUp: followUp, textFieldNotes: textFieldNotes, date: date)
                             jobSearchRecord.append(newRecord)
                     }
                 }
