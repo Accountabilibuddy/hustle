@@ -55,7 +55,6 @@ class JobSearchController: UIViewController {
         
         let currentJobSearch = JobSearch.init(didHighVolumeSearch: didHighVolumeSearch, targetedSearch: targetedSearch, targetedEvents: targetedEvents, committedToGitHub: committedToGitHub, codingWars: codingWars, whiteBoarding: whiteBoarding, interviewQuestions: interviewQuestions, infoCoffee: infoCoffee, meetupEvents: meetUps, visitCompanies: visitCompanies, followUp: followUp, textFieldNotes: textFieldNotes)
         
-//        CloudKit.shared.currentTask.JobSearch = currentJobSearch
         
         if let recordSaved = JobSearch.recordFor(jobSearch: currentJobSearch){
             CloudKit.shared.save(record: recordSaved, completion: { (success) in

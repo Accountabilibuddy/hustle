@@ -11,17 +11,13 @@ import UIKit
 class HustleController: UIViewController {
     
     var allJobSearchRecords = [JobSearch]()
-//    var allTechnicalRecords = [Technical]()
-//    var allNetworkingRecords = [Networking]()
-//    var dailyTasks = [DailyTasks]()
-    
 
 
     @IBOutlet weak var hustleTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.dailyTasks.append(CloudKit.shared.currentTask)
+        
         self.hustleTableView.delegate = self
         self.hustleTableView.dataSource = self
         
@@ -44,9 +40,7 @@ class HustleController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-            updateJobSearchRecords()
-//        updateTechnicalRecords()
-//        updateNetworkingRecords()
+        updateJobSearchRecords()
         self.hustleTableView.reloadData()
             
     }
@@ -61,23 +55,6 @@ class HustleController: UIViewController {
         }
     }
     
-//    func updateTechnicalRecords() {
-//        CloudKit.shared.getTechnicalRecords { (technicalSearchRecord) in
-//            if let technicalSearchRecord = technicalSearchRecord {
-//                self.allTechnicalRecords = technicalSearchRecord
-//                self.hustleTableView.reloadData()
-//            }
-//        }
-//    }
-//    
-//    func updateNetworkingRecords() {
-//        CloudKit.shared.getNetworkingRecords { (networkingSearchRecord) in
-//            if let networkingSearchRecord = networkingSearchRecord {
-//                self.allNetworkingRecords = networkingSearchRecord
-//                self.hustleTableView.reloadData()
-//            }
-//        }
-//    }
 }
 
 extension HustleController: UITableViewDataSource, UITableViewDelegate {
