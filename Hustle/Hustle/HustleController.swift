@@ -13,6 +13,7 @@ class HustleController: UIViewController {
     var allJobSearchRecords = [JobSearch]()
     var allTechnicalRecords = [Technical]()
     var allNetworkingRecords = [Networking]()
+    var dailyTasks = [DailyTasks]()
     
 
 
@@ -20,9 +21,20 @@ class HustleController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.dailyTasks.append(CloudKit.shared.currentTask)
         self.hustleTableView.delegate = self
         self.hustleTableView.dataSource = self
+        
+        self.hustleTableView.estimatedRowHeight = 150
+        self.hustleTableView.rowHeight = UITableViewAutomaticDimension
+        
+        CloudKit.shared.getJobSearchRecords { (jobSearch) in
+            OperationQueue.main.addOperation {
+                self.allJobSearchRecords = jobSearch  ?? []
+                print(self.dailyTasks.count)
+                self.hustleTableView.reloadData()
+            }
+        }
 
         let jobSearchNibCell = UINib(nibName: JobSearchNibCell.identifier, bundle: nil)
         self.hustleTableView.register(jobSearchNibCell, forCellReuseIdentifier: JobSearchNibCell.identifier)
@@ -35,6 +47,7 @@ class HustleController: UIViewController {
         updateJobSearchRecords()
         updateTechnicalRecords()
         updateNetworkingRecords()
+        self.hustleTableView.reloadData()
             
     }
     
@@ -42,7 +55,7 @@ class HustleController: UIViewController {
         CloudKit.shared.getJobSearchRecords { (jobSearchRecord) in
             if let jobSearchRecord = jobSearchRecord {
                 self.allJobSearchRecords = jobSearchRecord
-//                print("Fetched job search records \(jobSearchRecord[0].didHighVolumeSearch)")
+                self.hustleTableView.reloadData()
             }
         }
     }
@@ -51,7 +64,7 @@ class HustleController: UIViewController {
         CloudKit.shared.getTechnicalRecords { (technicalSearchRecord) in
             if let technicalSearchRecord = technicalSearchRecord {
                 self.allTechnicalRecords = technicalSearchRecord
-//                print("Fetched technical search records \(technicalSearchRecord[0].committedToGitHub)")
+                self.hustleTableView.reloadData()
             }
         }
     }
@@ -60,7 +73,7 @@ class HustleController: UIViewController {
         CloudKit.shared.getNetworkingRecords { (networkingSearchRecord) in
             if let networkingSearchRecord = networkingSearchRecord {
                 self.allNetworkingRecords = networkingSearchRecord
-//                print("Fetched networking search records \(networkingSearchRecord.infoCoffee)")
+                self.hustleTableView.reloadData()
             }
         }
     }
@@ -69,16 +82,16 @@ class HustleController: UIViewController {
 extension HustleController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.allJobSearchRecords.count
+        return self.dailyTasks.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = hustleTableView.dequeueReusableCell(withIdentifier: JobSearchNibCell.identifier, for: indexPath) as! JobSearchNibCell
         
-        let record = self.allJobSearchRecords[indexPath.row]
-        
-        cell.record = record
+        let dailyTasks = self.dailyTasks[indexPath.row]
+
+        cell.dailyTasks = dailyTasks
         
         return cell
     }

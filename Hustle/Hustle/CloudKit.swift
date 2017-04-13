@@ -14,10 +14,14 @@ typealias JobSearchCompletion = ([JobSearch]?)->()
 typealias TechnicalCompletion = ([Technical]?)->()
 typealias NetworkingCompletion = ([Networking]?)->()
 typealias UserCompletion = ([User])->()
+typealias ProfileName = (String)->()
+typealias ProfileImage = (UIImage?)->()
 
 class CloudKit {
     
     static let shared = CloudKit()
+    
+    var currentTask = DailyTasks()
     
     var userName = String()
     
@@ -26,6 +30,7 @@ class CloudKit {
     var publicDatabase : CKDatabase {
         return container.publicCloudDatabase
     }
+    
     
     //save method for regular records
     func save(record: CKRecord, completion: @escaping SuccessCompletion) {
@@ -64,6 +69,35 @@ class CloudKit {
             print(error)
         }
     }
+    
+    func getProfileImageRecord(completion: @escaping ProfileImage){
+        
+        let imageQuery = CKQuery(recordType: "ProfileImage", predicate: NSPredicate(value: true))
+        
+        self.publicDatabase.perform(imageQuery, inZoneWith: nil) { (records, error) in
+            
+            if error != nil {
+                OperationQueue.main.addOperation {
+                    completion(nil)
+                }
+            }
+            
+            if let records = records {
+//                print(records.first)
+                let record = records.first
+                if let asset = record?["userImage"] as? CKAsset {
+                        let path = asset.fileURL.path
+                        if let image = UIImage(contentsOfFile: path){
+                            OperationQueue.main.addOperation {
+                                completion(image)
+                            }
+                        }
+                }
+                        
+            }
+        }
+    }
+
 
     
     func getJobSearchRecords(completion: @escaping JobSearchCompletion) {
@@ -164,43 +198,19 @@ class CloudKit {
         }
     }
     
-//    func getUserID() {
-//        CKContainer.default().requestApplicationPermission(.userDiscoverability) { (status, error) in
-//            CKContainer.default().fetchUserRecordID(completionHandler: { (record, error) in
-//                CKContainer.default().discoverUserIdentity(withUserRecordID: record!, completionHandler: { (userID, error) in
-//                    print(userID?.hasiCloudAccount ?? "User Name not Defined")
-//                    self.userName = ((userID?.nameComponents?.givenName)! + " " + (userID?.nameComponents?.familyName)!)
-////                    print(self.userName)
-//                })
-//            })
-//        }
-//    }
+    func getUserID(completion: @escaping ProfileName) {
+        CKContainer.default().requestApplicationPermission(.userDiscoverability) { (status, error) in
+            CKContainer.default().fetchUserRecordID(completionHandler: { (record, error) in
+                CKContainer.default().discoverUserIdentity(withUserRecordID: record!, completionHandler: { (userID, error) in
+                    print(userID?.hasiCloudAccount ?? "User Name not Defined")
+                    self.userName = ((userID?.nameComponents?.givenName)! + " " + (userID?.nameComponents?.familyName)!)
+                    
+                    OperationQueue.main.addOperation {
+                        completion(self.userName)
+                    }
+                })
+            })
+        }
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
