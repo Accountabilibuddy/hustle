@@ -36,7 +36,7 @@ extension User {
             
             let record = CKRecord(recordType: "ProfileImage")
             
-            record.setValue(asset,forKey:"image")
+            record.setValue(asset,forKey:"userImage")
             
             return record
             
