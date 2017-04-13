@@ -32,7 +32,7 @@ class TechnicalController: UIViewController {
         
         let currentTechnicalRecord = Technical.init(committedToGitHub: committedToGitHub, codingWars: codingWars, whiteBoarding: whiteBoarding, interviewQuestions: interviewQuestions, techNotes: techNotes)
         
-        CloudKit.shared.currentTask.Technical = currentTechnicalRecord
+//        CloudKit.shared.currentTask.Technical = currentTechnicalRecord
         
         if let recordSaved = Technical.recordFor(technical: currentTechnicalRecord) {
             CloudKit.shared.save(record: recordSaved, completion: { (success) in

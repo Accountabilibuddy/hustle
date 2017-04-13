@@ -11,9 +11,9 @@ import UIKit
 class HustleController: UIViewController {
     
     var allJobSearchRecords = [JobSearch]()
-    var allTechnicalRecords = [Technical]()
-    var allNetworkingRecords = [Networking]()
-    var dailyTasks = [DailyTasks]()
+//    var allTechnicalRecords = [Technical]()
+//    var allNetworkingRecords = [Networking]()
+//    var dailyTasks = [DailyTasks]()
     
 
 
@@ -21,7 +21,7 @@ class HustleController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.dailyTasks.append(CloudKit.shared.currentTask)
+//        self.dailyTasks.append(CloudKit.shared.currentTask)
         self.hustleTableView.delegate = self
         self.hustleTableView.dataSource = self
         
@@ -31,7 +31,7 @@ class HustleController: UIViewController {
         CloudKit.shared.getJobSearchRecords { (jobSearch) in
             OperationQueue.main.addOperation {
                 self.allJobSearchRecords = jobSearch  ?? []
-                print(self.dailyTasks.count)
+                print(self.allJobSearchRecords.count)
                 self.hustleTableView.reloadData()
             }
         }
@@ -45,8 +45,8 @@ class HustleController: UIViewController {
         super.viewDidAppear(animated)
         
         updateJobSearchRecords()
-        updateTechnicalRecords()
-        updateNetworkingRecords()
+//        updateTechnicalRecords()
+//        updateNetworkingRecords()
         self.hustleTableView.reloadData()
             
     }
@@ -60,36 +60,36 @@ class HustleController: UIViewController {
         }
     }
     
-    func updateTechnicalRecords() {
-        CloudKit.shared.getTechnicalRecords { (technicalSearchRecord) in
-            if let technicalSearchRecord = technicalSearchRecord {
-                self.allTechnicalRecords = technicalSearchRecord
-                self.hustleTableView.reloadData()
-            }
-        }
-    }
-    
-    func updateNetworkingRecords() {
-        CloudKit.shared.getNetworkingRecords { (networkingSearchRecord) in
-            if let networkingSearchRecord = networkingSearchRecord {
-                self.allNetworkingRecords = networkingSearchRecord
-                self.hustleTableView.reloadData()
-            }
-        }
-    }
+//    func updateTechnicalRecords() {
+//        CloudKit.shared.getTechnicalRecords { (technicalSearchRecord) in
+//            if let technicalSearchRecord = technicalSearchRecord {
+//                self.allTechnicalRecords = technicalSearchRecord
+//                self.hustleTableView.reloadData()
+//            }
+//        }
+//    }
+//    
+//    func updateNetworkingRecords() {
+//        CloudKit.shared.getNetworkingRecords { (networkingSearchRecord) in
+//            if let networkingSearchRecord = networkingSearchRecord {
+//                self.allNetworkingRecords = networkingSearchRecord
+//                self.hustleTableView.reloadData()
+//            }
+//        }
+//    }
 }
 
 extension HustleController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.dailyTasks.count
+        return self.allJobSearchRecords.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = hustleTableView.dequeueReusableCell(withIdentifier: JobSearchNibCell.identifier, for: indexPath) as! JobSearchNibCell
         
-        let dailyTasks = self.dailyTasks[indexPath.row]
+        let dailyTasks = self.allJobSearchRecords[indexPath.row]
 
         cell.dailyTasks = dailyTasks
         

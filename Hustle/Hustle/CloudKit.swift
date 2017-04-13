@@ -21,7 +21,7 @@ class CloudKit {
     
     static let shared = CloudKit()
     
-    var currentTask = DailyTasks()
+//    var currentTask = DailyTasks()
     
     var userName = String()
     
@@ -117,11 +117,19 @@ class CloudKit {
                     if let didHighVolumeSearch = record["didHighVolumeSearch"] as? Bool,
                         let targetedSearch = record["targetedSearch"] as? Bool,
                         let targetedEvents = record["targetedEvents"] as? Bool,
+                        let committedToGitHub = record["committedToGitHub"] as? Bool,
+                        let codingWars = record["codingWars"] as? Bool,
+                        let whiteBoarding = record["whiteBoarding"] as? Bool,
+                        let interviewQuestions = record["interviewQuestions"] as? Bool,
+                        let infoCoffee = record["infoCoffee"] as? Bool,
+                        let meetUps = record["meetUps"] as? Bool,
+                        let visitCompanies = record["visitCompanies"] as? Bool,
+                        let followUp = record["followUp"] as? Bool,
                         let companiesAppliedTo = record["companiesAppliedTo"] as? String,
                         let date = record["date"] as? Date
                         
                     {
-                        let newRecord = JobSearch(didHighVolumeSearch: didHighVolumeSearch, targetedSearch: targetedSearch, targetedEvents: targetedEvents, companiesAppliedTo: companiesAppliedTo, date: date)
+                        let newRecord = JobSearch(didHighVolumeSearch: didHighVolumeSearch, targetedSearch: targetedSearch, targetedEvents: targetedEvents, committedToGitHub: committedToGitHub, codingWars: codingWars, whiteBoarding: whiteBoarding, interviewQuestions: interviewQuestions, infoCoffee: infoCoffee, meetupEvents: meetUps, visitCompanies: visitCompanies, followUp: followUp, companiesAppliedTo: companiesAppliedTo, date: date)
                         jobSearchRecord.append(newRecord)
                     }
                 }
