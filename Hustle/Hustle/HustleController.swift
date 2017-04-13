@@ -89,9 +89,9 @@ extension HustleController: UITableViewDataSource, UITableViewDelegate {
         
         let cell = hustleTableView.dequeueReusableCell(withIdentifier: JobSearchNibCell.identifier, for: indexPath) as! JobSearchNibCell
         
-        let dailyTasks = self.allJobSearchRecords[indexPath.row]
+        let jobSearchRecord = self.allJobSearchRecords[indexPath.row]
 
-        cell.dailyTasks = dailyTasks
+        cell.dailyTasks = jobSearchRecord
         
         return cell
     }

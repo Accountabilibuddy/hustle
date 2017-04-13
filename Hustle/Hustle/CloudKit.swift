@@ -125,86 +125,87 @@ class CloudKit {
                         let meetUps = record["meetUps"] as? Bool,
                         let visitCompanies = record["visitCompanies"] as? Bool,
                         let followUp = record["followUp"] as? Bool,
-                        let companiesAppliedTo = record["companiesAppliedTo"] as? String,
+                        let textFieldNotes = record["textFieldNotes"] as? String,
                         let date = record["date"] as? Date
                         
                     {
-                        let newRecord = JobSearch(didHighVolumeSearch: didHighVolumeSearch, targetedSearch: targetedSearch, targetedEvents: targetedEvents, committedToGitHub: committedToGitHub, codingWars: codingWars, whiteBoarding: whiteBoarding, interviewQuestions: interviewQuestions, infoCoffee: infoCoffee, meetupEvents: meetUps, visitCompanies: visitCompanies, followUp: followUp, companiesAppliedTo: companiesAppliedTo, date: date)
-                        jobSearchRecord.append(newRecord)
+                        let newRecord = JobSearch(didHighVolumeSearch: didHighVolumeSearch, targetedSearch: targetedSearch, targetedEvents: targetedEvents, committedToGitHub: committedToGitHub, codingWars: codingWars, whiteBoarding: whiteBoarding, interviewQuestions: interviewQuestions, infoCoffee: infoCoffee, meetupEvents: meetUps, visitCompanies: visitCompanies, followUp: followUp, textFieldNotes: textFieldNotes, date: date)
+                            jobSearchRecord.append(newRecord)
                     }
                 }
+                print()
                 OperationQueue.main.addOperation {
                     completion(jobSearchRecord)
                 }
             }
         }
     }
-    
-    func getTechnicalRecords(completion: @escaping TechnicalCompletion) {
-        let recordQuery = CKQuery(recordType: "Technical", predicate: NSPredicate(value: true))
-        
-        self.publicDatabase.perform(recordQuery, inZoneWith: nil) { (records, error) in
-            if  error != nil {
-                OperationQueue.main.addOperation {
-                    completion(nil)
-                }
-            }
-            
-            if let records = records {
-                var technicalRecord = [Technical]()
-                
-                for record in records {
-                    if let committedToGitHub = record["committedToGitHub"] as? Bool,
-                        let codingWars = record["codingWars"] as? Bool,
-                        let whiteBoarding = record["whiteBoarding"] as? Bool,
-                        let interviewQuestions = record["interviewQuestions"] as? Bool,
-                        let techNotes = record["techNotes"] as? String,
-                        let date = record["date"] as? Date
-                        
-                    {
-                        let newRecord = Technical(committedToGitHub: committedToGitHub, codingWars: codingWars, whiteBoarding: whiteBoarding, interviewQuestions: interviewQuestions,  techNotes: techNotes, date: date)
-                        technicalRecord.append(newRecord)
-                    }
-                }
-                OperationQueue.main.addOperation {
-                    completion(technicalRecord)
-                }
-            }
-        }
-    }
-    
-    func getNetworkingRecords(completion: @escaping NetworkingCompletion) {
-        let recordQuery = CKQuery(recordType: "Networking", predicate: NSPredicate(value: true))
-        
-        self.publicDatabase.perform(recordQuery, inZoneWith: nil) { (records, error) in
-            if  error != nil {
-                OperationQueue.main.addOperation {
-                    completion(nil)
-                }
-            }
-            
-            if let records = records {
-                var networkRecord = [Networking]()
-                
-                for record in records {
-                    if let infoCoffee = record["infoCoffee"] as? Bool,
-                        let meetUps = record["meetUps"] as? Bool,
-                        let visitCompanies = record["visitCompanies"] as? Bool,
-                        let followUp = record["followUp"] as? Bool,
-                        let networkingNotes = record["networkingNotes"] as? String,
-                        let date = record["date"] as? Date
-                        
-                    {
-                        let newRecord = Networking(infoCoffee: infoCoffee, meetupEvents: meetUps, visitCompanies: visitCompanies, followUp: followUp, networkNotes: networkingNotes, date: date)
-                        networkRecord.append(newRecord)
-                    }
-                }
-                OperationQueue.main.addOperation {
-                    completion(networkRecord)
-                }
-            }
-        }
-    }
+//    
+//    func getTechnicalRecords(completion: @escaping TechnicalCompletion) {
+//        let recordQuery = CKQuery(recordType: "Technical", predicate: NSPredicate(value: true))
+//        
+//        self.publicDatabase.perform(recordQuery, inZoneWith: nil) { (records, error) in
+//            if  error != nil {
+//                OperationQueue.main.addOperation {
+//                    completion(nil)
+//                }
+//            }
+//            
+//            if let records = records {
+//                var technicalRecord = [Technical]()
+//                
+//                for record in records {
+//                    if let committedToGitHub = record["committedToGitHub"] as? Bool,
+//                        let codingWars = record["codingWars"] as? Bool,
+//                        let whiteBoarding = record["whiteBoarding"] as? Bool,
+//                        let interviewQuestions = record["interviewQuestions"] as? Bool,
+//                        let techNotes = record["techNotes"] as? String,
+//                        let date = record["date"] as? Date
+//                        
+//                    {
+//                        let newRecord = Technical(committedToGitHub: committedToGitHub, codingWars: codingWars, whiteBoarding: whiteBoarding, interviewQuestions: interviewQuestions,  techNotes: techNotes, date: date)
+//                        technicalRecord.append(newRecord)
+//                    }
+//                }
+//                OperationQueue.main.addOperation {
+//                    completion(technicalRecord)
+//                }
+//            }
+//        }
+//    }
+//    
+//    func getNetworkingRecords(completion: @escaping NetworkingCompletion) {
+//        let recordQuery = CKQuery(recordType: "Networking", predicate: NSPredicate(value: true))
+//        
+//        self.publicDatabase.perform(recordQuery, inZoneWith: nil) { (records, error) in
+//            if  error != nil {
+//                OperationQueue.main.addOperation {
+//                    completion(nil)
+//                }
+//            }
+//            
+//            if let records = records {
+//                var networkRecord = [Networking]()
+//                
+//                for record in records {
+//                    if let infoCoffee = record["infoCoffee"] as? Bool,
+//                        let meetUps = record["meetUps"] as? Bool,
+//                        let visitCompanies = record["visitCompanies"] as? Bool,
+//                        let followUp = record["followUp"] as? Bool,
+//                        let networkingNotes = record["networkingNotes"] as? String,
+//                        let date = record["date"] as? Date
+//                        
+//                    {
+//                        let newRecord = Networking(infoCoffee: infoCoffee, meetupEvents: meetUps, visitCompanies: visitCompanies, followUp: followUp, networkNotes: networkingNotes, date: date)
+//                        networkRecord.append(newRecord)
+//                    }
+//                }
+//                OperationQueue.main.addOperation {
+//                    completion(networkRecord)
+//                }
+//            }
+//        }
+//    }
     
     func getUserID(completion: @escaping ProfileName) {
         CKContainer.default().requestApplicationPermission(.userDiscoverability) { (status, error) in

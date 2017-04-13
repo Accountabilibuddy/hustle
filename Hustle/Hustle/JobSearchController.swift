@@ -15,7 +15,6 @@ class JobSearchController: UIViewController {
     @IBOutlet weak var didHighVolumeSearch: UISwitch!
     @IBOutlet weak var targetedSearch: UISwitch!
     @IBOutlet weak var targetedEvents: UISwitch!
-    @IBOutlet weak var companiesAppliedTo: UITextView!
     
     @IBOutlet weak var infoCoffee: UISwitch!
     @IBOutlet weak var meetUp: UISwitch!
@@ -27,6 +26,7 @@ class JobSearchController: UIViewController {
     @IBOutlet weak var whiteBoarding: UISwitch!
     @IBOutlet weak var interviewQuestions: UISwitch!
     
+    @IBOutlet weak var textFieldNotes: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,9 +50,10 @@ class JobSearchController: UIViewController {
         let visitCompanies = self.visitCompanies.isOn
         let followUp = self.followUp.isOn
         
-        let companiesAppliedTo = self.companiesAppliedTo.text ?? ""
+        let textFieldNotes = self.textFieldNotes.text ?? ""
+
         
-        let currentJobSearch = JobSearch.init(didHighVolumeSearch: didHighVolumeSearch, targetedSearch: targetedSearch, targetedEvents: targetedEvents, committedToGitHub: committedToGitHub, codingWars: codingWars, whiteBoarding: whiteBoarding, interviewQuestions: interviewQuestions, infoCoffee: infoCoffee, meetupEvents: meetUps, visitCompanies: visitCompanies, followUp: followUp, companiesAppliedTo: companiesAppliedTo)
+        let currentJobSearch = JobSearch.init(didHighVolumeSearch: didHighVolumeSearch, targetedSearch: targetedSearch, targetedEvents: targetedEvents, committedToGitHub: committedToGitHub, codingWars: codingWars, whiteBoarding: whiteBoarding, interviewQuestions: interviewQuestions, infoCoffee: infoCoffee, meetupEvents: meetUps, visitCompanies: visitCompanies, followUp: followUp, textFieldNotes: textFieldNotes)
         
 //        CloudKit.shared.currentTask.JobSearch = currentJobSearch
         

@@ -37,12 +37,6 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" text="Companies Applied To" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UP1-SM-SRU">
-                        <rect key="frame" x="8" y="95" width="411" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" text="Committed to Git Hub" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFm-J1-9Cb">
                         <rect key="frame" x="10" y="153" width="411" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -67,13 +61,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" text="Tech Notes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qm-wv-xB4">
-                        <rect key="frame" x="8" y="269" width="411" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Networking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nRB-ZR-pmo">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Networking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nRB-ZR-pmo">
                         <rect key="frame" x="0.0" y="298" width="411" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -85,38 +73,38 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" text="Info Coffee" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LM-vN-dXU">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" ambiguous="YES" text="Info Coffee" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LM-vN-dXU">
                         <rect key="frame" x="10" y="327" width="411" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" text="Meetups" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgI-CG-c7o">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" ambiguous="YES" text="Meetups" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgI-CG-c7o">
                         <rect key="frame" x="14" y="356" width="411" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visit Companies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mol-Hf-xtV">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Visit Companies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mol-Hf-xtV">
                         <rect key="frame" x="6" y="385" width="411" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Follow Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gyl-cb-jgf">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" ambiguous="YES" text="Follow Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gyl-cb-jgf">
                         <rect key="frame" x="6" y="414" width="411" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" text="Networking Notes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7B-VO-uek">
-                        <rect key="frame" x="14" y="443" width="411" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNN-U4-gP6">
                         <rect key="frame" x="8" y="472" width="411" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" text="Text Field Notes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UP1-SM-SRU">
+                        <rect key="frame" x="2" y="443" width="411" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -130,47 +118,39 @@
                     <constraint firstItem="4LM-vN-dXU" firstAttribute="leading" secondItem="MHh-ya-7Qj" secondAttribute="leading" constant="10" id="5Xe-69-bbJ"/>
                     <constraint firstItem="TNN-U4-gP6" firstAttribute="leading" secondItem="MHh-ya-7Qj" secondAttribute="leadingMargin" id="5iR-JH-QVX"/>
                     <constraint firstItem="8tm-ne-60x" firstAttribute="leading" secondItem="MHh-ya-7Qj" secondAttribute="leading" constant="2" id="8Qc-mK-ny0"/>
-                    <constraint firstAttribute="trailing" secondItem="UP1-SM-SRU" secondAttribute="trailing" constant="8" id="AOt-Bq-u0N"/>
+                    <constraint firstAttribute="trailing" secondItem="UP1-SM-SRU" secondAttribute="trailing" constant="14" id="AOt-Bq-u0N"/>
                     <constraint firstAttribute="trailing" secondItem="8tm-ne-60x" secondAttribute="trailing" constant="14" id="BB1-D3-1ma"/>
                     <constraint firstItem="Mol-Hf-xtV" firstAttribute="top" secondItem="mgI-CG-c7o" secondAttribute="bottom" constant="8" id="Buh-D9-zGX"/>
                     <constraint firstAttribute="trailing" secondItem="8WM-ZY-B7w" secondAttribute="trailing" constant="8" id="ClZ-7k-s8I"/>
                     <constraint firstAttribute="trailing" secondItem="tuH-Bn-ghv" secondAttribute="trailing" constant="16" id="DV1-ke-eY1"/>
-                    <constraint firstItem="O7B-VO-uek" firstAttribute="top" secondItem="Gyl-cb-jgf" secondAttribute="bottom" constant="8" id="EP1-8e-Rt6"/>
                     <constraint firstItem="Gyl-cb-jgf" firstAttribute="leading" secondItem="MHh-ya-7Qj" secondAttribute="leading" constant="6" id="IRD-ea-sCi"/>
                     <constraint firstAttribute="trailing" secondItem="cFm-J1-9Cb" secondAttribute="trailing" constant="6" id="KcA-Q5-3h2"/>
                     <constraint firstItem="qT9-FL-iij" firstAttribute="leading" secondItem="MHh-ya-7Qj" secondAttribute="leading" id="LAP-rM-QQR"/>
-                    <constraint firstItem="kCr-Gh-g3p" firstAttribute="top" secondItem="UP1-SM-SRU" secondAttribute="bottom" constant="8" id="LeN-pi-h03"/>
+                    <constraint firstItem="kCr-Gh-g3p" firstAttribute="top" secondItem="UP1-SM-SRU" secondAttribute="bottom" constant="-340" id="LeN-pi-h03"/>
                     <constraint firstItem="d0n-dv-01k" firstAttribute="top" secondItem="8tm-ne-60x" secondAttribute="bottom" constant="8" id="NEc-RQ-Knl"/>
                     <constraint firstItem="Mol-Hf-xtV" firstAttribute="leading" secondItem="MHh-ya-7Qj" secondAttribute="leading" constant="6" id="NJu-7D-KuN"/>
-                    <constraint firstItem="7qm-wv-xB4" firstAttribute="leading" secondItem="MHh-ya-7Qj" secondAttribute="leading" constant="8" id="Nia-RU-eVX"/>
                     <constraint firstItem="Gyl-cb-jgf" firstAttribute="top" secondItem="Mol-Hf-xtV" secondAttribute="bottom" constant="8" id="Otz-XA-4NH"/>
                     <constraint firstItem="cFm-J1-9Cb" firstAttribute="top" secondItem="kCr-Gh-g3p" secondAttribute="bottom" constant="8" id="P7C-e5-jB2"/>
-                    <constraint firstItem="UP1-SM-SRU" firstAttribute="top" secondItem="qT9-FL-iij" secondAttribute="bottom" constant="8" id="PAm-Jv-2Es"/>
+                    <constraint firstItem="UP1-SM-SRU" firstAttribute="top" secondItem="qT9-FL-iij" secondAttribute="bottom" constant="356" id="PAm-Jv-2Es"/>
                     <constraint firstItem="kCr-Gh-g3p" firstAttribute="leading" secondItem="MHh-ya-7Qj" secondAttribute="leading" constant="6" id="Pv1-ej-5Jo"/>
                     <constraint firstAttribute="trailing" secondItem="qT9-FL-iij" secondAttribute="trailing" constant="16" id="Q5C-gs-FgS"/>
                     <constraint firstItem="8WM-ZY-B7w" firstAttribute="leading" secondItem="MHh-ya-7Qj" secondAttribute="leading" constant="8" id="RFs-75-bdk"/>
-                    <constraint firstItem="7qm-wv-xB4" firstAttribute="top" secondItem="5yI-9T-IvX" secondAttribute="bottom" constant="8" id="SMm-eZ-ly2"/>
                     <constraint firstItem="mgI-CG-c7o" firstAttribute="top" secondItem="4LM-vN-dXU" secondAttribute="bottom" constant="8" id="Tpg-wZ-F42"/>
                     <constraint firstAttribute="trailing" secondItem="Gyl-cb-jgf" secondAttribute="trailing" constant="10" id="V08-ZZ-YnM"/>
                     <constraint firstItem="mgI-CG-c7o" firstAttribute="leading" secondItem="MHh-ya-7Qj" secondAttribute="leading" constant="14" id="V3z-eG-QSg"/>
-                    <constraint firstAttribute="trailing" secondItem="7qm-wv-xB4" secondAttribute="trailing" constant="8" id="WNG-a3-Blk"/>
                     <constraint firstItem="nRB-ZR-pmo" firstAttribute="leading" secondItem="MHh-ya-7Qj" secondAttribute="leading" id="a3i-Yy-6MP"/>
                     <constraint firstItem="tuH-Bn-ghv" firstAttribute="top" secondItem="8WM-ZY-B7w" secondAttribute="bottom" constant="8" id="cUt-4I-R86"/>
                     <constraint firstItem="qT9-FL-iij" firstAttribute="top" secondItem="tuH-Bn-ghv" secondAttribute="bottom" constant="8" id="cZS-tW-QO3"/>
                     <constraint firstItem="cFm-J1-9Cb" firstAttribute="leading" secondItem="MHh-ya-7Qj" secondAttribute="leading" constant="10" id="cyk-oD-FNo"/>
-                    <constraint firstItem="TNN-U4-gP6" firstAttribute="top" secondItem="O7B-VO-uek" secondAttribute="bottom" constant="8" id="dbu-b1-PM4"/>
                     <constraint firstItem="d0n-dv-01k" firstAttribute="leading" secondItem="MHh-ya-7Qj" secondAttribute="leading" constant="2" id="dfo-N4-y2y"/>
                     <constraint firstItem="8WM-ZY-B7w" firstAttribute="top" secondItem="MHh-ya-7Qj" secondAttribute="top" constant="8" id="ehg-L8-5lW"/>
-                    <constraint firstItem="O7B-VO-uek" firstAttribute="leading" secondItem="MHh-ya-7Qj" secondAttribute="leading" constant="14" id="fcD-s2-teU"/>
                     <constraint firstAttribute="trailing" secondItem="d0n-dv-01k" secondAttribute="trailing" constant="14" id="fok-gE-fjZ"/>
                     <constraint firstAttribute="trailing" secondItem="4LM-vN-dXU" secondAttribute="trailing" constant="6" id="gMs-eZ-JOu"/>
-                    <constraint firstItem="UP1-SM-SRU" firstAttribute="leading" secondItem="MHh-ya-7Qj" secondAttribute="leading" constant="8" id="gii-y4-oxC"/>
+                    <constraint firstItem="UP1-SM-SRU" firstAttribute="leading" secondItem="MHh-ya-7Qj" secondAttribute="leading" constant="2" id="gii-y4-oxC"/>
                     <constraint firstAttribute="trailing" secondItem="nRB-ZR-pmo" secondAttribute="trailing" constant="16" id="gyY-q7-Aeh"/>
                     <constraint firstAttribute="trailing" secondItem="Mol-Hf-xtV" secondAttribute="trailing" constant="10" id="hQH-uu-4OJ"/>
-                    <constraint firstAttribute="trailing" secondItem="O7B-VO-uek" secondAttribute="trailing" constant="2" id="hqI-b7-iKx"/>
                     <constraint firstItem="4LM-vN-dXU" firstAttribute="top" secondItem="nRB-ZR-pmo" secondAttribute="bottom" constant="8" id="huN-Ee-dNj"/>
                     <constraint firstAttribute="bottomMargin" secondItem="TNN-U4-gP6" secondAttribute="bottom" constant="501.5" id="jJd-qQ-6XI"/>
-                    <constraint firstItem="nRB-ZR-pmo" firstAttribute="top" secondItem="7qm-wv-xB4" secondAttribute="bottom" constant="8" id="jRQ-yM-hog"/>
                     <constraint firstAttribute="trailing" secondItem="mgI-CG-c7o" secondAttribute="trailing" constant="2" id="jhE-xc-2sO"/>
                     <constraint firstItem="5yI-9T-IvX" firstAttribute="top" secondItem="d0n-dv-01k" secondAttribute="bottom" constant="8" id="l0Z-wO-J3i"/>
                     <constraint firstItem="tuH-Bn-ghv" firstAttribute="leading" secondItem="MHh-ya-7Qj" secondAttribute="leading" id="y3G-Qi-s6f"/>
@@ -180,17 +160,14 @@
             <connections>
                 <outlet property="codingWars" destination="8tm-ne-60x" id="Oem-mJ-E2i"/>
                 <outlet property="committedToGitHub" destination="cFm-J1-9Cb" id="ekE-xo-Vss"/>
-                <outlet property="companiesAppliedTo" destination="UP1-SM-SRU" id="EPu-7o-kCU"/>
                 <outlet property="date" destination="TNN-U4-gP6" id="EHT-48-7ea"/>
                 <outlet property="didHighVolumeSearch" destination="8WM-ZY-B7w" id="bo1-6x-Izu"/>
                 <outlet property="followUp" destination="Gyl-cb-jgf" id="Rg8-2n-sam"/>
                 <outlet property="infoCoffee" destination="4LM-vN-dXU" id="caW-C9-tc3"/>
                 <outlet property="interviewQuestions" destination="5yI-9T-IvX" id="nBU-6o-SRf"/>
                 <outlet property="meetups" destination="mgI-CG-c7o" id="GfZ-mt-u2O"/>
-                <outlet property="networkingNotes" destination="O7B-VO-uek" id="cJ2-IY-Flx"/>
                 <outlet property="targetedEvents" destination="qT9-FL-iij" id="fb7-zW-5Sr"/>
                 <outlet property="targetedSearch" destination="tuH-Bn-ghv" id="OGM-ce-qZL"/>
-                <outlet property="techNotes" destination="7qm-wv-xB4" id="JEi-CA-cJA"/>
                 <outlet property="visitCompanies" destination="Mol-Hf-xtV" id="rqQ-dw-Jeb"/>
                 <outlet property="whiteBoarding" destination="d0n-dv-01k" id="moO-EY-49O"/>
             </connections>

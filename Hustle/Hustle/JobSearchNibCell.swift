@@ -14,7 +14,7 @@ class JobSearchNibCell: UITableViewCell {
     @IBOutlet weak var didHighVolumeSearch: UILabel!
     @IBOutlet weak var targetedSearch: UILabel!
     @IBOutlet weak var targetedEvents: UILabel!
-    @IBOutlet weak var companiesAppliedTo: UILabel!
+    @IBOutlet weak var textFieldNotes: UILabel!
     @IBOutlet weak var committedToGitHub: UILabel!
     @IBOutlet weak var codingWars: UILabel!
     @IBOutlet weak var whiteBoarding: UILabel!
@@ -45,7 +45,7 @@ class JobSearchNibCell: UITableViewCell {
             self.visitCompanies.isHidden = !dailyTasks.visitCompanies
             self.followUp.isHidden = !dailyTasks.followUp
             
-            self.companiesAppliedTo.text = dailyTasks.companiesAppliedTo
+            self.textFieldNotes.text = dailyTasks.textFieldNotes
             self.date.text = DateFormatter.localizedString(from: (dailyTasks.date), dateStyle: .short, timeStyle: .short)
         }
     }
