@@ -36,11 +36,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yG5-6z-oJ8">
-                                <rect key="frame" x="155" y="461" width="64" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="About Us"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -70,7 +65,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UxJ-mp-xX0">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UxJ-mp-xX0">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
@@ -80,7 +75,7 @@
                             <constraint firstItem="UxJ-mp-xX0" firstAttribute="top" secondItem="Whk-16-Z09" secondAttribute="top" id="Z9H-Pw-Ubs"/>
                             <constraint firstAttribute="trailing" secondItem="UxJ-mp-xX0" secondAttribute="trailing" id="ejc-CK-GsU"/>
                             <constraint firstItem="UxJ-mp-xX0" firstAttribute="leading" secondItem="Whk-16-Z09" secondAttribute="leading" id="hlu-2j-faQ"/>
-                            <constraint firstItem="LCb-C5-9hP" firstAttribute="top" secondItem="UxJ-mp-xX0" secondAttribute="bottom" id="ivz-xE-5Fy"/>
+                            <constraint firstItem="LCb-C5-9hP" firstAttribute="top" secondItem="UxJ-mp-xX0" secondAttribute="bottom" constant="-882" id="ivz-xE-5Fy"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Hustle" id="hw0-RF-0lg"/>
@@ -160,11 +155,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1106"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bv8-Kl-DFE">
-                                <rect key="frame" x="0.0" y="58" width="375" height="999"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bv8-Kl-DFE">
+                                <rect key="frame" x="0.0" y="58" width="375" height="925"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3c9-7u-CZq">
-                                        <rect key="frame" x="0.0" y="-23" width="375" height="1106"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3c9-7u-CZq">
+                                        <rect key="frame" x="0.0" y="-23" width="375" height="884"/>
                                         <subviews>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8ST-VJ-Pn3">
                                                 <rect key="frame" x="27" y="509" width="51" height="31"/>
@@ -367,25 +362,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fdv-4j-ySk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3604" y="857"/>
-        </scene>
-        <!--About Us Controller-->
-        <scene sceneID="2O3-GJ-87I">
-            <objects>
-                <viewController id="yqC-Y9-KaQ" customClass="AboutUsController" customModule="Hustle" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="1Nd-C7-jAc"/>
-                        <viewControllerLayoutGuide type="bottom" id="Qpr-mo-rK4"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="RiM-Bs-OTf">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="d1Z-nO-F2j" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2737" y="1545"/>
+            <point key="canvasLocation" x="3604" y="856.37181409295363"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="h7S-5O-I2d">
