@@ -15,17 +15,39 @@ class JobSearchNibCell: UITableViewCell {
     @IBOutlet weak var targetedSearch: UILabel!
     @IBOutlet weak var targetedEvents: UILabel!
     @IBOutlet weak var companiesAppliedTo: UILabel!
-    @IBOutlet weak var dateOfJobSearch: UILabel!
+    @IBOutlet weak var committedToGitHub: UILabel!
+    @IBOutlet weak var codingWars: UILabel!
+    @IBOutlet weak var whiteBoarding: UILabel!
+    @IBOutlet weak var interviewQuestions: UILabel!
+    @IBOutlet weak var techNotes: UILabel!
+    @IBOutlet weak var infoCoffee: UILabel!
+    @IBOutlet weak var meetups: UILabel!
+    @IBOutlet weak var visitCompanies: UILabel!
+    @IBOutlet weak var followUp: UILabel!
+    @IBOutlet weak var networkingNotes: UILabel!
+    @IBOutlet weak var date: UILabel!
+    
+
     
     
-    var jobSearchRecord : JobSearch! {
+    var dailyTasks : DailyTasks! {
         didSet {
             
-            self.didHighVolumeSearch.isHidden = !jobSearchRecord.didHighVolumeSearch
-            self.targetedSearch.isHidden = !jobSearchRecord.targetedSearch
-            self.targetedEvents.isHidden = !jobSearchRecord.targetedEvents
-            self.companiesAppliedTo.text = jobSearchRecord.companiesAppliedTo
-            self.dateOfJobSearch.text = DateFormatter.localizedString(from: jobSearchRecord.date, dateStyle: .short, timeStyle: .short)
+            self.didHighVolumeSearch.isHidden = !(dailyTasks.JobSearch?.didHighVolumeSearch)!
+            self.targetedSearch.isHidden = !(dailyTasks.JobSearch?.targetedSearch)!
+            self.targetedEvents.isHidden = !(dailyTasks.JobSearch?.targetedEvents)!
+            self.companiesAppliedTo.text = dailyTasks.JobSearch?.companiesAppliedTo
+            self.committedToGitHub.isHidden = !(dailyTasks.Technical?.committedToGitHub)!
+            self.codingWars.isHidden = !(dailyTasks.Technical?.codingWars)!
+            self.whiteBoarding.isHidden = !(dailyTasks.Technical?.whiteBoarding)!
+            self.interviewQuestions.isHidden = !(dailyTasks.Technical?.interviewQuestions)!
+            self.techNotes.text = dailyTasks.Technical?.techNotes
+            self.infoCoffee.isHidden = !(dailyTasks.Networking?.infoCoffee)!
+            self.meetups.isHidden = !(dailyTasks.Networking?.meetupEvents)!
+            self.visitCompanies.isHidden = !(dailyTasks.Networking?.visitCompanies)!
+            self.followUp.isHidden = !(dailyTasks.Networking?.followUp)!
+            self.networkingNotes.text = dailyTasks.Networking?.networkNotes
+            self.date.text = DateFormatter.localizedString(from: (dailyTasks.JobSearch?.date)!, dateStyle: .short, timeStyle: .short)
         }
     }
     

@@ -13,6 +13,7 @@ class HustleController: UIViewController {
     var allJobSearchRecords = [JobSearch]()
     var allTechnicalRecords = [Technical]()
     var allNetworkingRecords = [Networking]()
+    var dailyTasks = [DailyTasks]()
     
 
 
@@ -20,7 +21,7 @@ class HustleController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.dailyTasks.append(CloudKit.shared.currentTask)
         self.hustleTableView.delegate = self
         self.hustleTableView.dataSource = self
         
@@ -30,7 +31,7 @@ class HustleController: UIViewController {
         CloudKit.shared.getJobSearchRecords { (jobSearch) in
             OperationQueue.main.addOperation {
                 self.allJobSearchRecords = jobSearch  ?? []
-                print(self.allJobSearchRecords.count)
+                print(self.dailyTasks.count)
                 self.hustleTableView.reloadData()
             }
         }
@@ -81,16 +82,16 @@ class HustleController: UIViewController {
 extension HustleController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.allJobSearchRecords.count
+        return self.dailyTasks.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = hustleTableView.dequeueReusableCell(withIdentifier: JobSearchNibCell.identifier, for: indexPath) as! JobSearchNibCell
         
-        let jobSearchRecord = self.allJobSearchRecords[indexPath.row]
+        let dailyTasks = self.dailyTasks[indexPath.row]
 
-        cell.jobSearchRecord = jobSearchRecord
+        cell.dailyTasks = dailyTasks
         
         return cell
     }

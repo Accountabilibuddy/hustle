@@ -21,6 +21,8 @@ class CloudKit {
     
     static let shared = CloudKit()
     
+    var currentTask = DailyTasks()
+    
     var userName = String()
     
     let container = CKContainer.default()
