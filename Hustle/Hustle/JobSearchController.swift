@@ -31,7 +31,7 @@ class JobSearchController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+        
     }
     
     @IBAction func saveJobSearch(_ sender: Any) {
@@ -61,5 +61,7 @@ class JobSearchController: UIViewController {
                 print("Saving Record: \(success)")
             })
         }
+        
+        self.navigationController?.popToRootViewController(animated: true)
     }
 }
