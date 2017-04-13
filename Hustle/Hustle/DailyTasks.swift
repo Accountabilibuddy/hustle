@@ -6,15 +6,15 @@
 //  Copyright © 2017 Eve Denison. All rights reserved.
 //
 
-import UIKit
-import CloudKit
+//import UIKit
+//import CloudKit
+//
+//class DailyTasks {
+//    
+//    var JobSearch : JobSearch?
+//    var Technical : Technical?
+//    var Networking : Networking?
 
-class DailyTasks {
-    
-    var JobSearch : JobSearch?
-    var Technical : Technical?
-    var Networking : Networking?
-    
 //    func updateJobSearchRecords() {
 //        CloudKit.shared.getJobSearchRecords { (jobSearchRecord) in
 //            if let jobSearchRecord = jobSearchRecord {
@@ -41,4 +41,4 @@ class DailyTasks {
 //            }
 //        }
 //    }
-}
+//}

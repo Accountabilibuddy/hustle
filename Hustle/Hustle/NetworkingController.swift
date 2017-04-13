@@ -32,7 +32,7 @@ class NetworkingController: UIViewController {
         
         let currentNetworkingRecord = Networking.init(infoCoffee: infoCoffee, meetupEvents: meetUps, visitCompanies: visitCompanies, followUp: followUp, networkNotes: networkingNotes)
         
-        CloudKit.shared.currentTask.Networking = currentNetworkingRecord
+//        CloudKit.shared.currentTask.Networking = currentNetworkingRecord
         
         if let recordSaved = Networking.recordFor(networking: currentNetworkingRecord) {
             CloudKit.shared.save(record: recordSaved, completion: { (success) in
