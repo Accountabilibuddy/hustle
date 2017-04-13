@@ -18,14 +18,9 @@
 		501CB3D81E9BF2CA006C98AC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501CB3D71E9BF2CA006C98AC /* HomeViewController.swift */; };
 		503418AC1E9D4259008BC01C /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503418AB1E9D4259008BC01C /* ProfileController.swift */; };
 		503418AE1E9D43FA008BC01C /* HustleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503418AD1E9D43FA008BC01C /* HustleController.swift */; };
-		50E5909C1E9C660E00B18F1F /* Technical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E5909B1E9C660E00B18F1F /* Technical.swift */; };
 		E5103F9B1E9C26850038E43F /* JobSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5103F9A1E9C26850038E43F /* JobSearchController.swift */; };
-		E5103F9D1E9C26E50038E43F /* TechnicalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5103F9C1E9C26E50038E43F /* TechnicalController.swift */; };
-		E5103F9F1E9C26FB0038E43F /* NetworkingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5103F9E1E9C26FB0038E43F /* NetworkingController.swift */; };
 		E5103FA31E9C3A8A0038E43F /* CloudKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5103FA21E9C3A8A0038E43F /* CloudKit.swift */; };
 		E5103FA51E9C3E4F0038E43F /* JobSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5103FA41E9C3E4F0038E43F /* JobSearch.swift */; };
-		E5AFA5631E9EFFF200049002 /* DailyTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AFA5621E9EFFF200049002 /* DailyTasks.swift */; };
-		E5CCCEA21E9D32F60069C825 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CCCEA11E9D32F60069C825 /* Networking.swift */; };
 		E5CCCEA41E9D55230069C825 /* JobSearchNibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5CCCEA31E9D55230069C825 /* JobSearchNibCell.xib */; };
 		E5CCCEA61E9D570C0069C825 /* JobSearchNibCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CCCEA51E9D570C0069C825 /* JobSearchNibCell.swift */; };
 /* End PBXBuildFile section */
@@ -45,14 +40,9 @@
 		501CB3D71E9BF2CA006C98AC /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		503418AB1E9D4259008BC01C /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		503418AD1E9D43FA008BC01C /* HustleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HustleController.swift; sourceTree = "<group>"; };
-		50E5909B1E9C660E00B18F1F /* Technical.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Technical.swift; sourceTree = "<group>"; };
 		E5103F9A1E9C26850038E43F /* JobSearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobSearchController.swift; sourceTree = "<group>"; };
-		E5103F9C1E9C26E50038E43F /* TechnicalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TechnicalController.swift; sourceTree = "<group>"; };
-		E5103F9E1E9C26FB0038E43F /* NetworkingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingController.swift; sourceTree = "<group>"; };
 		E5103FA21E9C3A8A0038E43F /* CloudKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKit.swift; sourceTree = "<group>"; };
 		E5103FA41E9C3E4F0038E43F /* JobSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobSearch.swift; sourceTree = "<group>"; };
-		E5AFA5621E9EFFF200049002 /* DailyTasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyTasks.swift; sourceTree = "<group>"; };
-		E5CCCEA11E9D32F60069C825 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		E5CCCEA31E9D55230069C825 /* JobSearchNibCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobSearchNibCell.xib; sourceTree = "<group>"; };
 		E5CCCEA51E9D570C0069C825 /* JobSearchNibCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobSearchNibCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,8 +92,6 @@
 			children = (
 				01D39A9F1E9D7EFE00EF9198 /* User.swift */,
 				E5103FA41E9C3E4F0038E43F /* JobSearch.swift */,
-				50E5909B1E9C660E00B18F1F /* Technical.swift */,
-				E5CCCEA11E9D32F60069C825 /* Networking.swift */,
 				01010E131E9E1BFF00B68B90 /* UIExtensions.swift */,
 				015854161E9E9A980064E96D /* FoundationExtensions.swift */,
 			);
@@ -125,13 +113,10 @@
 		501CB3D11E9BF1F4006C98AC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E5AFA5621E9EFFF200049002 /* DailyTasks.swift */,
 				501CB3D71E9BF2CA006C98AC /* HomeViewController.swift */,
 				503418AD1E9D43FA008BC01C /* HustleController.swift */,
 				503418AB1E9D4259008BC01C /* ProfileController.swift */,
 				E5103F9A1E9C26850038E43F /* JobSearchController.swift */,
-				E5103F9C1E9C26E50038E43F /* TechnicalController.swift */,
-				E5103F9E1E9C26FB0038E43F /* NetworkingController.swift */,
 				E5103FA21E9C3A8A0038E43F /* CloudKit.swift */,
 			);
 			name = Controller;
@@ -239,20 +224,15 @@
 			files = (
 				501CB3BE1E9BF1C0006C98AC /* AppDelegate.swift in Sources */,
 				01010E141E9E1BFF00B68B90 /* UIExtensions.swift in Sources */,
-				E5CCCEA21E9D32F60069C825 /* Networking.swift in Sources */,
 				E5103F9B1E9C26850038E43F /* JobSearchController.swift in Sources */,
-				E5AFA5631E9EFFF200049002 /* DailyTasks.swift in Sources */,
 				E5CCCEA61E9D570C0069C825 /* JobSearchNibCell.swift in Sources */,
 				501CB3D81E9BF2CA006C98AC /* HomeViewController.swift in Sources */,
 				E5103FA51E9C3E4F0038E43F /* JobSearch.swift in Sources */,
 				503418AC1E9D4259008BC01C /* ProfileController.swift in Sources */,
 				E5103FA31E9C3A8A0038E43F /* CloudKit.swift in Sources */,
 				503418AE1E9D43FA008BC01C /* HustleController.swift in Sources */,
-				50E5909C1E9C660E00B18F1F /* Technical.swift in Sources */,
 				015854171E9E9A980064E96D /* FoundationExtensions.swift in Sources */,
-				E5103F9D1E9C26E50038E43F /* TechnicalController.swift in Sources */,
 				01D39AA01E9D7EFE00EF9198 /* User.swift in Sources */,
-				E5103F9F1E9C26FB0038E43F /* NetworkingController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,17 +11,13 @@ import UIKit
 class HustleController: UIViewController {
     
     var allJobSearchRecords = [JobSearch]()
-//    var allTechnicalRecords = [Technical]()
-//    var allNetworkingRecords = [Networking]()
-//    var dailyTasks = [DailyTasks]()
-    
 
 
     @IBOutlet weak var hustleTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.dailyTasks.append(CloudKit.shared.currentTask)
+        
         self.hustleTableView.delegate = self
         self.hustleTableView.dataSource = self
         
@@ -45,8 +41,6 @@ class HustleController: UIViewController {
         super.viewDidAppear(animated)
         
         updateJobSearchRecords()
-//        updateTechnicalRecords()
-//        updateNetworkingRecords()
         self.hustleTableView.reloadData()
             
     }
@@ -56,27 +50,11 @@ class HustleController: UIViewController {
             if let jobSearchRecord = jobSearchRecord {
                 self.allJobSearchRecords = jobSearchRecord
                 self.hustleTableView.reloadData()
+                print("Fetched job search records: \(jobSearchRecord[0].didHighVolumeSearch)")
             }
         }
     }
     
-//    func updateTechnicalRecords() {
-//        CloudKit.shared.getTechnicalRecords { (technicalSearchRecord) in
-//            if let technicalSearchRecord = technicalSearchRecord {
-//                self.allTechnicalRecords = technicalSearchRecord
-//                self.hustleTableView.reloadData()
-//            }
-//        }
-//    }
-//    
-//    func updateNetworkingRecords() {
-//        CloudKit.shared.getNetworkingRecords { (networkingSearchRecord) in
-//            if let networkingSearchRecord = networkingSearchRecord {
-//                self.allNetworkingRecords = networkingSearchRecord
-//                self.hustleTableView.reloadData()
-//            }
-//        }
-//    }
 }
 
 extension HustleController: UITableViewDataSource, UITableViewDelegate {
@@ -89,9 +67,9 @@ extension HustleController: UITableViewDataSource, UITableViewDelegate {
         
         let cell = hustleTableView.dequeueReusableCell(withIdentifier: JobSearchNibCell.identifier, for: indexPath) as! JobSearchNibCell
         
-        let dailyTasks = self.allJobSearchRecords[indexPath.row]
+        let jobSearchRecord = self.allJobSearchRecords[indexPath.row]
 
-        cell.dailyTasks = dailyTasks
+        cell.jobSearchRecords = jobSearchRecord
         
         return cell
     }

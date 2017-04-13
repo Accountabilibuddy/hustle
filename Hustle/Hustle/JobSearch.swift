@@ -28,11 +28,11 @@ class JobSearch {
     var visitCompanies : Bool
     var followUp : Bool
     
-    var companiesAppliedTo : String?
+    var textFieldNotes : String?
     
     let date: Date
     
-    init(didHighVolumeSearch: Bool, targetedSearch: Bool, targetedEvents: Bool, committedToGitHub: Bool, codingWars: Bool, whiteBoarding: Bool, interviewQuestions: Bool, infoCoffee: Bool, meetupEvents: Bool, visitCompanies: Bool, followUp: Bool, companiesAppliedTo: String, date: Date = Date()) {
+    init(didHighVolumeSearch: Bool, targetedSearch: Bool, targetedEvents: Bool, committedToGitHub: Bool, codingWars: Bool, whiteBoarding: Bool, interviewQuestions: Bool, infoCoffee: Bool, meetupEvents: Bool, visitCompanies: Bool, followUp: Bool, textFieldNotes: String, date: Date = Date()) {
         
         self.didHighVolumeSearch = didHighVolumeSearch
         self.targetedSearch = targetedSearch
@@ -48,7 +48,7 @@ class JobSearch {
         self.visitCompanies = visitCompanies
         self.followUp = followUp
         
-        self.companiesAppliedTo = companiesAppliedTo
+        self.textFieldNotes = textFieldNotes
         
         self.date = date
     }
@@ -73,7 +73,7 @@ extension JobSearch {
         record.setValue(jobSearch.visitCompanies, forKey: "visitCompanies")
         record.setValue(jobSearch.followUp, forKey: "followUp")
 
-        record.setValue(jobSearch.companiesAppliedTo, forKey: "companiesAppliedTo")
+        record.setValue(jobSearch.textFieldNotes, forKey: "textFieldNotes")
         record.setValue(jobSearch.date, forKey: "date")
         
         return record
