@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		01010E141E9E1BFF00B68B90 /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01010E131E9E1BFF00B68B90 /* UIExtensions.swift */; };
+		010526A81EA028EF00BA4614 /* AboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010526A71EA028EF00BA4614 /* AboutUs.swift */; };
 		015854171E9E9A980064E96D /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015854161E9E9A980064E96D /* FoundationExtensions.swift */; };
 		01D39AA01E9D7EFE00EF9198 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D39A9F1E9D7EFE00EF9198 /* User.swift */; };
 		501CB3BE1E9BF1C0006C98AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501CB3BD1E9BF1C0006C98AC /* AppDelegate.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		01010E131E9E1BFF00B68B90 /* UIExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
+		010526A71EA028EF00BA4614 /* AboutUs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUs.swift; sourceTree = "<group>"; };
 		015854161E9E9A980064E96D /* FoundationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundationExtensions.swift; sourceTree = "<group>"; };
 		01D39A9F1E9D7EFE00EF9198 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		501CB3BA1E9BF1C0006C98AC /* Hustle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hustle.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +119,7 @@
 				503418AD1E9D43FA008BC01C /* HustleController.swift */,
 				503418AB1E9D4259008BC01C /* ProfileController.swift */,
 				E5103F9A1E9C26850038E43F /* JobSearchController.swift */,
+				010526A71EA028EF00BA4614 /* AboutUs.swift */,
 				E5103FA21E9C3A8A0038E43F /* CloudKit.swift */,
 			);
 			name = Controller;
@@ -225,6 +228,7 @@
 				501CB3BE1E9BF1C0006C98AC /* AppDelegate.swift in Sources */,
 				01010E141E9E1BFF00B68B90 /* UIExtensions.swift in Sources */,
 				E5103F9B1E9C26850038E43F /* JobSearchController.swift in Sources */,
+				010526A81EA028EF00BA4614 /* AboutUs.swift in Sources */,
 				E5CCCEA61E9D570C0069C825 /* JobSearchNibCell.swift in Sources */,
 				501CB3D81E9BF2CA006C98AC /* HomeViewController.swift in Sources */,
 				E5103FA51E9C3E4F0038E43F /* JobSearch.swift in Sources */,
