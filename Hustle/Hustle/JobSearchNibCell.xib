@@ -158,18 +158,19 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="codingWars" destination="8tm-ne-60x" id="Oem-mJ-E2i"/>
-                <outlet property="committedToGitHub" destination="cFm-J1-9Cb" id="ekE-xo-Vss"/>
-                <outlet property="date" destination="TNN-U4-gP6" id="EHT-48-7ea"/>
-                <outlet property="didHighVolumeSearch" destination="8WM-ZY-B7w" id="bo1-6x-Izu"/>
-                <outlet property="followUp" destination="Gyl-cb-jgf" id="Rg8-2n-sam"/>
-                <outlet property="infoCoffee" destination="4LM-vN-dXU" id="caW-C9-tc3"/>
-                <outlet property="interviewQuestions" destination="5yI-9T-IvX" id="nBU-6o-SRf"/>
-                <outlet property="meetups" destination="mgI-CG-c7o" id="GfZ-mt-u2O"/>
-                <outlet property="targetedEvents" destination="qT9-FL-iij" id="fb7-zW-5Sr"/>
-                <outlet property="targetedSearch" destination="tuH-Bn-ghv" id="OGM-ce-qZL"/>
-                <outlet property="visitCompanies" destination="Mol-Hf-xtV" id="rqQ-dw-Jeb"/>
-                <outlet property="whiteBoarding" destination="d0n-dv-01k" id="moO-EY-49O"/>
+                <outlet property="codingWars" destination="8tm-ne-60x" id="PSY-n0-q8h"/>
+                <outlet property="committedToGitHub" destination="cFm-J1-9Cb" id="1l6-Em-FJx"/>
+                <outlet property="date" destination="TNN-U4-gP6" id="Phg-Vo-mAE"/>
+                <outlet property="didHighVolumeSearch" destination="8WM-ZY-B7w" id="2nU-5G-WkF"/>
+                <outlet property="followUp" destination="Gyl-cb-jgf" id="KVv-wT-4AO"/>
+                <outlet property="infoCoffee" destination="4LM-vN-dXU" id="rxE-VB-U7g"/>
+                <outlet property="interviewQuestions" destination="5yI-9T-IvX" id="g6u-71-qzL"/>
+                <outlet property="meetups" destination="mgI-CG-c7o" id="Eqn-wv-E9B"/>
+                <outlet property="targetedEvents" destination="qT9-FL-iij" id="qOD-6L-P2k"/>
+                <outlet property="targetedSearch" destination="tuH-Bn-ghv" id="EI0-Kf-xsR"/>
+                <outlet property="textFieldNotes" destination="UP1-SM-SRU" id="Ewb-my-XK3"/>
+                <outlet property="visitCompanies" destination="Mol-Hf-xtV" id="37k-bL-Xpy"/>
+                <outlet property="whiteBoarding" destination="d0n-dv-01k" id="auF-cM-5s2"/>
             </connections>
             <point key="canvasLocation" x="60.5" y="441.5"/>
         </tableViewCell>

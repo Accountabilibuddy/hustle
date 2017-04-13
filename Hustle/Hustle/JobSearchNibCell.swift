@@ -19,12 +19,10 @@ class JobSearchNibCell: UITableViewCell {
     @IBOutlet weak var codingWars: UILabel!
     @IBOutlet weak var whiteBoarding: UILabel!
     @IBOutlet weak var interviewQuestions: UILabel!
-    @IBOutlet weak var techNotes: UILabel!
     @IBOutlet weak var infoCoffee: UILabel!
     @IBOutlet weak var meetups: UILabel!
     @IBOutlet weak var visitCompanies: UILabel!
     @IBOutlet weak var followUp: UILabel!
-    @IBOutlet weak var networkingNotes: UILabel!
     @IBOutlet weak var date: UILabel!
     
 
