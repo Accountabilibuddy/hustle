@@ -8,47 +8,77 @@
 
 import UIKit
 
-class JobSearchController: UIViewController, UITextViewDelegate {
+class JobSearchController: UIViewController, UITextViewDelegate, BEMCheckBoxDelegate {
 
     var jobSearch : JobSearch!
     
-    @IBOutlet weak var didHighVolumeSearch: UISwitch!
-    @IBOutlet weak var targetedSearch: UISwitch!
-    @IBOutlet weak var targetedEvents: UISwitch!
+//    @IBOutlet weak var didHighVolumeSearch: UISwitch!
+//    @IBOutlet weak var targetedSearch: UISwitch!
+//    @IBOutlet weak var targetedEvents: UISwitch!
     
-    @IBOutlet weak var infoCoffee: UISwitch!
-    @IBOutlet weak var meetUp: UISwitch!
-    @IBOutlet weak var visitCompanies: UISwitch!
-    @IBOutlet weak var followUp: UISwitch!
+//    @IBOutlet weak var infoCoffee: UISwitch!
+//    @IBOutlet weak var meetUp: UISwitch!
+//    @IBOutlet weak var visitCompanies: UISwitch!
+//    @IBOutlet weak var followUp: UISwitch!
     
-    @IBOutlet weak var commitToGitHub: UISwitch!
-    @IBOutlet weak var codingWars: UISwitch!
-    @IBOutlet weak var whiteBoarding: UISwitch!
-    @IBOutlet weak var interviewQuestions: UISwitch!
+//    @IBOutlet weak var commitToGitHub: UISwitch!
+//    @IBOutlet weak var codingWars: UISwitch!
+//    @IBOutlet weak var whiteBoarding: UISwitch!
+//    @IBOutlet weak var interviewQuestions: UISwitch!
     
     @IBOutlet weak var textFieldNotes: UITextView!
+    
+    @IBOutlet weak var didHighVolumeSearchBox: BEMCheckBox!
+    @IBOutlet weak var targetedSearch: BEMCheckBox!
+    @IBOutlet weak var targetedEvents: BEMCheckBox!
+    @IBOutlet weak var infoCoffee: BEMCheckBox!
+    @IBOutlet weak var meetUp: BEMCheckBox!
+    @IBOutlet weak var visitCompanies: BEMCheckBox!
+    @IBOutlet weak var followUp: BEMCheckBox!
+    @IBOutlet weak var commitToGitHub: BEMCheckBox!
+    @IBOutlet weak var codingWars: BEMCheckBox!
+    @IBOutlet weak var whiteBoarding: BEMCheckBox!
+    @IBOutlet weak var interviewQuestions: BEMCheckBox!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        didHighVolumeSearchBox.delegate = self
+        targetedSearch.delegate = self
+        targetedEvents.delegate = self
+        infoCoffee.delegate = self
+        meetUp.delegate = self
+        visitCompanies.delegate = self
+        followUp.delegate = self
+        commitToGitHub.delegate = self
+        codingWars.delegate = self
+        whiteBoarding.delegate = self
+        interviewQuestions.delegate = self
+        
         textFieldNotes.placeholder = "Place notes here"
+    }
+    
+    func didTap(_ checkBox: BEMCheckBox) {
+        print("User tapped \(checkBox.on)")
     }
     
     @IBAction func saveJobSearch(_ sender: Any) {
         
-        let didHighVolumeSearch = self.didHighVolumeSearch.isOn
-        let targetedSearch = self.targetedSearch.isOn
-        let targetedEvents = self.targetedEvents.isOn
+        let didHighVolumeSearch = self.didHighVolumeSearchBox.on
+        let targetedSearch = self.targetedSearch.on
+        let targetedEvents = self.targetedEvents.on
         
-        let committedToGitHub = self.commitToGitHub.isOn
-        let codingWars = self.codingWars.isOn
-        let whiteBoarding = self.whiteBoarding.isOn
-        let interviewQuestions = self.interviewQuestions.isOn
+        let committedToGitHub = self.commitToGitHub.on
+        let codingWars = self.codingWars.on
+        let whiteBoarding = self.whiteBoarding.on
+        let interviewQuestions = self.interviewQuestions.on
         
-        let infoCoffee = self.infoCoffee.isOn
-        let meetUps = self.meetUp.isOn
-        let visitCompanies = self.visitCompanies.isOn
-        let followUp = self.followUp.isOn
+        let infoCoffee = self.infoCoffee.on
+        let meetUps = self.meetUp.on
+        let visitCompanies = self.visitCompanies.on
+        let followUp = self.followUp.on
         
         let textFieldNotes = self.textFieldNotes.text ?? ""
 
