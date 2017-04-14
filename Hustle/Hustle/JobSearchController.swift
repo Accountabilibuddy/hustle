@@ -41,6 +41,9 @@ class JobSearchController: UIViewController, UITextViewDelegate, BEMCheckBoxDele
     @IBOutlet weak var interviewQuestions: BEMCheckBox!
     
     
+    @IBAction func doneButton(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -92,7 +95,7 @@ class JobSearchController: UIViewController, UITextViewDelegate, BEMCheckBoxDele
             })
         }
         
-        self.navigationController?.popToRootViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
     }
 }
 
