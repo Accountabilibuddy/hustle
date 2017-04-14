@@ -1,9 +1,9 @@
 # Project Name: Hustle
 Code Fellows iOS project in Swift 3
 
-# Project Concept: An application that helps students manage their job search after graduation. Assist with personal accountability to handle tasks, leads, planning and networking.
+Project Concept: An application that helps students manage their job search after graduation. Assist with personal accountability to handle tasks, leads, planning and networking.
 
-# Libraris and Frameworks
+Libraris and Frameworks
 1) BEMCheckBox is the library used for the the checkboxes
 2) CloudKit
 
