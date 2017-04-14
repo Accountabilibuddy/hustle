@@ -15,10 +15,10 @@ Problem Domain: A lot of students decide to take some time off after they gradua
 
 ### User Stories
 
-* As a user, I want to be able to reference of my constructive job list activity.
-* As a user, I would like to keep a record of my completed job search activities.
-* As a user, I want to post my daily progress on social media. (In development)
-* As a user, I want to have one place for all the business cards that I collect. (In development)
+- As a user, I want to be able to reference of my constructive job list activity.
+- As a user, I would like to keep a record of my completed job search activities.
+- As a user, I want to post my daily progress on social media. (In development)
+- As a user, I want to have one place for all the business cards that I collect. (In development)
 
 * As a developer, I want the UI to be easy and delightful.
 * As a developer, I want to let the user have access to their progress on all their Apple devices.
