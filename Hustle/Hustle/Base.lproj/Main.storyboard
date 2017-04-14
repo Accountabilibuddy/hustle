@@ -6,9 +6,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Aladin-Regular.ttf">
+            <string>Aladin-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -22,29 +26,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sk-67-fvo">
-                                <rect key="frame" x="16" y="156" width="343" height="30"/>
-                                <color key="backgroundColor" red="0.78483463109999996" green="0.82577556370000005" blue="0.72441264800000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="START THE HUSTLE"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hustle_baby" translatesAutoresizingMaskIntoConstraints="NO" id="fk6-D7-h6V">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sk-67-fvo">
+                                <rect key="frame" x="68" y="347" width="239" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80995826198630139" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Aladin-Regular" family="Aladin" pointSize="35"/>
+                                <size key="titleShadowOffset" width="0.0" height="3"/>
+                                <state key="normal" title="Daily Grind">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="cn6-i8-ua3" kind="show" id="rif-Tc-lHz"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="247" text="TASKS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i2p-Xw-U4N">
-                                <rect key="frame" x="45" y="64" width="285" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="i2p-Xw-U4N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="45" id="8K5-Cp-Oe6"/>
-                            <constraint firstItem="8sk-67-fvo" firstAttribute="top" secondItem="i2p-Xw-U4N" secondAttribute="bottom" constant="71.5" id="Das-ua-OiS"/>
-                            <constraint firstAttribute="trailing" secondItem="i2p-Xw-U4N" secondAttribute="trailing" constant="45" id="VFd-1c-biz"/>
-                            <constraint firstItem="8sk-67-fvo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fmc-I1-PJS"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="i2p-Xw-U4N" secondAttribute="bottom" constant="533.5" id="gHE-Ol-ZMC"/>
-                            <constraint firstItem="8sk-67-fvo" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="sjE-kU-4XB"/>
+                            <constraint firstItem="fk6-D7-h6V" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5ef-Sj-3ih"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fk6-D7-h6V" secondAttribute="bottom" id="KUg-hP-g7Z"/>
+                            <constraint firstItem="fk6-D7-h6V" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="UGS-rL-846"/>
+                            <constraint firstAttribute="trailing" secondItem="fk6-D7-h6V" secondAttribute="trailing" id="g2O-hu-UP8"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yXZ-bF-TQc"/>
@@ -111,11 +127,11 @@
                                 </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogv-h6-dpt">
-                                <rect key="frame" x="87" y="280" width="200" height="21"/>
+                                <rect key="frame" x="87" y="280" width="200" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="VXT-yG-Ct1"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -204,13 +220,6 @@
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Coding Wars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vwn-We-42c">
                                                 <rect key="frame" x="99" y="475" width="155" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Job Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKC-Zj-Foc">
-                                                <rect key="frame" x="114" y="8" width="166" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -343,6 +352,7 @@
                             <constraint firstItem="3c9-7u-CZq" firstAttribute="width" secondItem="hP4-wx-wTA" secondAttribute="width" id="zX7-4f-cxt"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Daily Grind" id="gAb-Jd-I06"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="1106"/>
                     <connections>
@@ -390,13 +400,13 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lgD-kX-s6m" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" id="dx3-Kb-WUK"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sR0-oh-CCE">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="sR0-oh-CCE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="FRE-mR-7up"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gkz-NX-B6r"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TSy-e8-4WQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -405,6 +415,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="hustle_baby" width="200" height="264"/>
         <image name="profileImagePlaceHolder" width="100" height="100"/>
     </resources>
 </document>
