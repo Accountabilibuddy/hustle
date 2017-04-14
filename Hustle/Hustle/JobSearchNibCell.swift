@@ -53,3 +53,5 @@ class JobSearchNibCell: UITableViewCell {
         // Initialization code
     }
 }
+
+     

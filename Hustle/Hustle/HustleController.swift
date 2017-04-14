@@ -20,9 +20,9 @@ class HustleController: UIViewController {
         
         self.hustleTableView.delegate = self
         self.hustleTableView.dataSource = self
-        
-        self.hustleTableView.estimatedRowHeight = 150
-        self.hustleTableView.rowHeight = UITableViewAutomaticDimension
+//        
+//        self.hustleTableView.estimatedRowHeight = 150
+//        self.hustleTableView.rowHeight = UITableViewAutomaticDimension
         
         CloudKit.shared.getJobSearchRecords { (jobSearch) in
             OperationQueue.main.addOperation {
@@ -108,3 +108,4 @@ extension HustleController: UITableViewDataSource, UITableViewDelegate {
         }
     }
 }
+

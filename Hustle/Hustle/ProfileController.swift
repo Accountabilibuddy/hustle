@@ -25,7 +25,7 @@ class ProfileController: UIViewController, UINavigationControllerDelegate {
 
         
         CloudKit.shared.getProfileImageRecord { (image) in
-            print("the image we got back for profile\(image)")
+            print("the image we got back for profile\(String(describing: image))")
             if image != nil {
                 self.profileImage.image = image
             }
