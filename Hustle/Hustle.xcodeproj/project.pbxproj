@@ -10,6 +10,7 @@
 		01010E141E9E1BFF00B68B90 /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01010E131E9E1BFF00B68B90 /* UIExtensions.swift */; };
 		010526A81EA028EF00BA4614 /* AboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010526A71EA028EF00BA4614 /* AboutUs.swift */; };
 		015854171E9E9A980064E96D /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015854161E9E9A980064E96D /* FoundationExtensions.swift */; };
+		016D76491EA0BEE600554630 /* Aladin-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 016D76481EA0BEE600554630 /* Aladin-Regular.ttf */; };
 		01D39AA01E9D7EFE00EF9198 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D39A9F1E9D7EFE00EF9198 /* User.swift */; };
 		501CB3BE1E9BF1C0006C98AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501CB3BD1E9BF1C0006C98AC /* AppDelegate.swift */; };
 		501CB3C31E9BF1C0006C98AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 501CB3C11E9BF1C0006C98AC /* Main.storyboard */; };
@@ -23,7 +24,6 @@
 		50236F841EA0874B0086945B /* BEMPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 50236F801EA0874B0086945B /* BEMPathManager.m */; };
 		503418AC1E9D4259008BC01C /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503418AB1E9D4259008BC01C /* ProfileController.swift */; };
 		503418AE1E9D43FA008BC01C /* HustleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503418AD1E9D43FA008BC01C /* HustleController.swift */; };
-		50522D171EA043D000D400A5 /* Aladin-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50522D151EA043D000D400A5 /* Aladin-Regular.ttf */; };
 		E5103F9B1E9C26850038E43F /* JobSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5103F9A1E9C26850038E43F /* JobSearchController.swift */; };
 		E5103FA31E9C3A8A0038E43F /* CloudKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5103FA21E9C3A8A0038E43F /* CloudKit.swift */; };
 		E5103FA51E9C3E4F0038E43F /* JobSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5103FA41E9C3E4F0038E43F /* JobSearch.swift */; };
@@ -36,6 +36,7 @@
 		01010E131E9E1BFF00B68B90 /* UIExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
 		010526A71EA028EF00BA4614 /* AboutUs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUs.swift; sourceTree = "<group>"; };
 		015854161E9E9A980064E96D /* FoundationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundationExtensions.swift; sourceTree = "<group>"; };
+		016D76481EA0BEE600554630 /* Aladin-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aladin-Regular.ttf"; sourceTree = "<group>"; };
 		01D39A9F1E9D7EFE00EF9198 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		501CB3BA1E9BF1C0006C98AC /* Hustle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hustle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		501CB3BD1E9BF1C0006C98AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,7 +58,6 @@
 		50236F851EA0877F0086945B /* CheckMarkHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CheckMarkHeader.h; path = ../CheckMarkHeader.h; sourceTree = "<group>"; };
 		503418AB1E9D4259008BC01C /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		503418AD1E9D43FA008BC01C /* HustleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HustleController.swift; sourceTree = "<group>"; };
-		50522D151EA043D000D400A5 /* Aladin-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aladin-Regular.ttf"; path = "../../../../Desktop/Aladin-Regular.ttf"; sourceTree = "<group>"; };
 		E5103F9A1E9C26850038E43F /* JobSearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobSearchController.swift; sourceTree = "<group>"; };
 		E5103FA21E9C3A8A0038E43F /* CloudKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKit.swift; sourceTree = "<group>"; };
 		E5103FA41E9C3E4F0038E43F /* JobSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobSearch.swift; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				E5E804B31EA06ACB005CAFFD /* Handlee-Regular.ttf */,
-				50522D151EA043D000D400A5 /* Aladin-Regular.ttf */,
+				016D76481EA0BEE600554630 /* Aladin-Regular.ttf */,
 				501CB3D51E9BF264006C98AC /* CloudKit.framework */,
 			);
 			name = Frameworks;
@@ -249,9 +249,9 @@
 			files = (
 				501CB3C81E9BF1C0006C98AC /* LaunchScreen.storyboard in Resources */,
 				501CB3C51E9BF1C0006C98AC /* Assets.xcassets in Resources */,
+				016D76491EA0BEE600554630 /* Aladin-Regular.ttf in Resources */,
 				501CB3C31E9BF1C0006C98AC /* Main.storyboard in Resources */,
 				E5CCCEA41E9D55230069C825 /* JobSearchNibCell.xib in Resources */,
-				50522D171EA043D000D400A5 /* Aladin-Regular.ttf in Resources */,
 				E5E804B51EA06ACB005CAFFD /* Handlee-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
