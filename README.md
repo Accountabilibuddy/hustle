@@ -22,3 +22,15 @@ Problem Domain: A lot of students decide to take some time off after they gradua
 - As a developer, I want the UI to be easy and delightful.
 - As a developer, I want to let the user have access to their progress on all their Apple devices.
 - As a developer, I want to use this project to showcase my teamwork skills and the skills I learned in 401.
+
+
+### Thank Yous
+- Jeremy Moore: For your patience and helping us walk through the implementation of CloudKit. 
+- Brandy Rhodes: For giving guidance and providing direction to our project.
+- Adam Wallraff: For being an awesome teacher.
+- Erica Winberry: For helping us with the journey of learning Swift!
+
+### About the Team
+- Kyle Hillman: I grew up in Olympia, WA and spent five years serving in the Army.  After leaving the service I finished my bachelor's degree in Audio production.  Towards the end of my degree, I found myself spending more time writing code than working on my degree.  After graduating I found Code Fellows and it has been a whirlwind of a ride ever since.
+- Eve Denison:  I’m a native New Mexican and have spent most of my life in the Southwest, but I fell in love with the PNW! I have ten years of experience in the mental health field spent mostly as a clinical social worker. I have a background in interdisciplinary arts as well. I am excited to eventually use technology to help people with mental health issues.
+- Luay Younus: ...
