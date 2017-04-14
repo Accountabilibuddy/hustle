@@ -10,7 +10,7 @@ Team members: Kyle, Luay, Eve
 1) BEMCheckBox is the library used for the the checkboxes
 2) CloudKit
 
-Problem Domain: A lot of students decide to take some time off after they graduate, which results in losing the skills they built and inability to land a job. Our Application aims to track their daily progress based on 3 facors: Job Search, Meeting Technical Skills, and Networking. There will be a daily task with multiple selections the user can pick from. After that, they can present their progress over one month and hopefully get a job! If not, they can show their progress to someone who can help pointing out some un-accomplished tasks and lead them to the right path, then start the one-month cycle over again.
+Problem Domain: A lot of students decide to take some time off after they graduate, which results in losing the skills they built and inability to land a job. Our Application aims to track their daily progress based on 3 facors: Job Search, Improving Technical Skills, and Networking. There will be a daily task with multiple selections the user can pick from. After that, they can present their progress over one month and hopefully get a job! If not, they can show their progress to someone who can help pointing out some un-accomplished tasks and lead them to the right path, then start the one-month cycle over again.
 
 
 ### User Stories
