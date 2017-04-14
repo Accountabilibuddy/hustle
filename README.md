@@ -2,7 +2,7 @@
 ### Team Name: Accountabilibuddy
 Team members: Kyle, Luay, Eve
 
-Code Fellows iOS project in Swift 3
+#### Code Fellows iOS project in Swift 3
 
 #### Project Concept: An application that helps students manage their job search after graduation. Assist with personal accountability to handle tasks, leads, planning and networking.
 
