@@ -6,7 +6,7 @@ Team members: Kyle, Luay, Eve
 
 #### Project Concept: An application that helps students manage their job search after graduation. Assist with personal accountability to handle tasks, leads, planning and networking.
 
-#### Libraris and Frameworks
+#### Libraries and Frameworks
 1) BEMCheckBox is the library used for the the checkboxes
 2) CloudKit
 
