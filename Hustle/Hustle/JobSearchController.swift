@@ -8,11 +8,11 @@
 
 import UIKit
 
-class JobSearchController: UIViewController, UITextViewDelegate {
+class JobSearchController: UIViewController, UITextViewDelegate, BEMCheckBoxDelegate {
 
     var jobSearch : JobSearch!
     
-    @IBOutlet weak var didHighVolumeSearch: UISwitch!
+//    @IBOutlet weak var didHighVolumeSearch: UISwitch!
     @IBOutlet weak var targetedSearch: UISwitch!
     @IBOutlet weak var targetedEvents: UISwitch!
     
@@ -28,15 +28,22 @@ class JobSearchController: UIViewController, UITextViewDelegate {
     
     @IBOutlet weak var textFieldNotes: UITextView!
     
+    @IBOutlet weak var didHighVolumeSearchBox: BEMCheckBox!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        didHighVolumeSearchBox.delegate = self
         
         textFieldNotes.placeholder = "Place notes here"
     }
     
+    func didTap(_ checkBox: BEMCheckBox) {
+        print("User tapped \(checkBox.on)")
+    }
+    
     @IBAction func saveJobSearch(_ sender: Any) {
         
-        let didHighVolumeSearch = self.didHighVolumeSearch.isOn
+        let didHighVolumeSearch = self.didHighVolumeSearchBox.on
         let targetedSearch = self.targetedSearch.isOn
         let targetedEvents = self.targetedEvents.isOn
         

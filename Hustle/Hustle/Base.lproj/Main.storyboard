@@ -351,6 +351,11 @@
                                                     <outlet property="delegate" destination="cn6-i8-ua3" id="FIF-uZ-Y36"/>
                                                 </connections>
                                             </textView>
+                                            <view tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SMV-td-AUX" customClass="BEMCheckBox">
+                                                <rect key="frame" x="56" y="37" width="101" height="86"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -381,7 +386,7 @@
                     <connections>
                         <outlet property="codingWars" destination="Rro-dV-8HQ" id="06J-4S-elF"/>
                         <outlet property="commitToGitHub" destination="epa-8O-Wqv" id="mlr-gs-Eb9"/>
-                        <outlet property="didHighVolumeSearch" destination="wzq-Aa-zfb" id="aul-9c-zXW"/>
+                        <outlet property="didHighVolumeSearchBox" destination="SMV-td-AUX" id="pP6-iA-FJE"/>
                         <outlet property="followUp" destination="C8O-QS-shc" id="b0J-dX-lLO"/>
                         <outlet property="infoCoffee" destination="Ebx-nG-gqi" id="gMP-mw-rcC"/>
                         <outlet property="interviewQuestions" destination="bjU-k0-y7F" id="2ie-Ur-80A"/>

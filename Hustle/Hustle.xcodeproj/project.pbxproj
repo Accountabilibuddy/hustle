@@ -17,6 +17,10 @@
 		501CB3C81E9BF1C0006C98AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 501CB3C61E9BF1C0006C98AC /* LaunchScreen.storyboard */; };
 		501CB3D61E9BF264006C98AC /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501CB3D51E9BF264006C98AC /* CloudKit.framework */; };
 		501CB3D81E9BF2CA006C98AC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501CB3D71E9BF2CA006C98AC /* HomeViewController.swift */; };
+		50236F811EA0874B0086945B /* BEMAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 50236F7A1EA0874B0086945B /* BEMAnimationManager.m */; };
+		50236F821EA0874B0086945B /* BEMCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 50236F7C1EA0874B0086945B /* BEMCheckBox.m */; };
+		50236F831EA0874B0086945B /* BEMCheckBoxGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 50236F7E1EA0874B0086945B /* BEMCheckBoxGroup.m */; };
+		50236F841EA0874B0086945B /* BEMPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 50236F801EA0874B0086945B /* BEMPathManager.m */; };
 		503418AC1E9D4259008BC01C /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503418AB1E9D4259008BC01C /* ProfileController.swift */; };
 		503418AE1E9D43FA008BC01C /* HustleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503418AD1E9D43FA008BC01C /* HustleController.swift */; };
 		50522D171EA043D000D400A5 /* Aladin-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50522D151EA043D000D400A5 /* Aladin-Regular.ttf */; };
@@ -42,6 +46,15 @@
 		501CB3D31E9BF25F006C98AC /* Hustle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hustle.entitlements; sourceTree = "<group>"; };
 		501CB3D51E9BF264006C98AC /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		501CB3D71E9BF2CA006C98AC /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		50236F791EA0874B0086945B /* BEMAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMAnimationManager.h; sourceTree = "<group>"; };
+		50236F7A1EA0874B0086945B /* BEMAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMAnimationManager.m; sourceTree = "<group>"; };
+		50236F7B1EA0874B0086945B /* BEMCheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCheckBox.h; sourceTree = "<group>"; };
+		50236F7C1EA0874B0086945B /* BEMCheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMCheckBox.m; sourceTree = "<group>"; };
+		50236F7D1EA0874B0086945B /* BEMCheckBoxGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCheckBoxGroup.h; sourceTree = "<group>"; };
+		50236F7E1EA0874B0086945B /* BEMCheckBoxGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMCheckBoxGroup.m; sourceTree = "<group>"; };
+		50236F7F1EA0874B0086945B /* BEMPathManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMPathManager.h; sourceTree = "<group>"; };
+		50236F801EA0874B0086945B /* BEMPathManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMPathManager.m; sourceTree = "<group>"; };
+		50236F851EA0877F0086945B /* CheckMarkHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CheckMarkHeader.h; path = ../CheckMarkHeader.h; sourceTree = "<group>"; };
 		503418AB1E9D4259008BC01C /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		503418AD1E9D43FA008BC01C /* HustleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HustleController.swift; sourceTree = "<group>"; };
 		50522D151EA043D000D400A5 /* Aladin-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aladin-Regular.ttf"; path = "../../../../Desktop/Aladin-Regular.ttf"; sourceTree = "<group>"; };
@@ -85,6 +98,7 @@
 		501CB3BC1E9BF1C0006C98AC /* Hustle */ = {
 			isa = PBXGroup;
 			children = (
+				50236F781EA0874B0086945B /* Classes */,
 				501CB3CF1E9BF1D8006C98AC /* Model */,
 				501CB3D01E9BF1EB006C98AC /* View */,
 				501CB3D11E9BF1F4006C98AC /* Controller */,
@@ -125,6 +139,7 @@
 				E5103F9A1E9C26850038E43F /* JobSearchController.swift */,
 				010526A71EA028EF00BA4614 /* AboutUs.swift */,
 				E5103FA21E9C3A8A0038E43F /* CloudKit.swift */,
+				50236F851EA0877F0086945B /* CheckMarkHeader.h */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -147,6 +162,21 @@
 				501CB3D51E9BF264006C98AC /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		50236F781EA0874B0086945B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				50236F791EA0874B0086945B /* BEMAnimationManager.h */,
+				50236F7A1EA0874B0086945B /* BEMAnimationManager.m */,
+				50236F7B1EA0874B0086945B /* BEMCheckBox.h */,
+				50236F7C1EA0874B0086945B /* BEMCheckBox.m */,
+				50236F7D1EA0874B0086945B /* BEMCheckBoxGroup.h */,
+				50236F7E1EA0874B0086945B /* BEMCheckBoxGroup.m */,
+				50236F7F1EA0874B0086945B /* BEMPathManager.h */,
+				50236F801EA0874B0086945B /* BEMPathManager.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,16 +264,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				501CB3BE1E9BF1C0006C98AC /* AppDelegate.swift in Sources */,
+				50236F821EA0874B0086945B /* BEMCheckBox.m in Sources */,
 				01010E141E9E1BFF00B68B90 /* UIExtensions.swift in Sources */,
+				50236F831EA0874B0086945B /* BEMCheckBoxGroup.m in Sources */,
 				E5103F9B1E9C26850038E43F /* JobSearchController.swift in Sources */,
 				010526A81EA028EF00BA4614 /* AboutUs.swift in Sources */,
 				E5CCCEA61E9D570C0069C825 /* JobSearchNibCell.swift in Sources */,
+				50236F841EA0874B0086945B /* BEMPathManager.m in Sources */,
 				501CB3D81E9BF2CA006C98AC /* HomeViewController.swift in Sources */,
 				E5103FA51E9C3E4F0038E43F /* JobSearch.swift in Sources */,
 				503418AC1E9D4259008BC01C /* ProfileController.swift in Sources */,
 				E5103FA31E9C3A8A0038E43F /* CloudKit.swift in Sources */,
 				503418AE1E9D43FA008BC01C /* HustleController.swift in Sources */,
 				015854171E9E9A980064E96D /* FoundationExtensions.swift in Sources */,
+				50236F811EA0874B0086945B /* BEMAnimationManager.m in Sources */,
 				01D39AA01E9D7EFE00EF9198 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,6 +409,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.evedenison.Hustle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = CheckMarkHeader.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -389,6 +424,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.evedenison.Hustle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = CheckMarkHeader.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
