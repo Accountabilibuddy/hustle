@@ -309,7 +309,7 @@
                                     <action selector="saveJobSearch:" destination="cn6-i8-ua3" eventType="touchUpInside" id="XOz-fa-ncW"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" keyboardDismissMode="interactive" text="ohfernflerklf" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tga-h3-9SY">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" keyboardDismissMode="interactive" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tga-h3-9SY">
                                 <rect key="frame" x="16" y="1181" width="343" height="183"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -328,6 +328,9 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="cn6-i8-ua3" id="FIF-uZ-Y36"/>
+                                </connections>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes to Self" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rm1-jn-dnm">
                                 <rect key="frame" x="138.5" y="1152" width="99" height="21"/>
