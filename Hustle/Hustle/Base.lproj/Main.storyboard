@@ -18,7 +18,7 @@
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Home View Controller" id="BYZ-38-t0r" customClass="HomeViewController" sceneMemberID="viewController">
+                <viewController title="Home View Controller" id="BYZ-38-t0r" customClass="HomeViewController" customModule="Hustle" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -78,22 +78,17 @@
                         <viewControllerLayoutGuide type="top" id="Pq6-E8-roy"/>
                         <viewControllerLayoutGuide type="bottom" id="LCb-C5-9hP"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Whk-16-Z09">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="Whk-16-Z09">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UxJ-mp-xX0">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="1000" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UxJ-mp-xX0">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="UxJ-mp-xX0" firstAttribute="top" secondItem="Whk-16-Z09" secondAttribute="top" id="Z9H-Pw-Ubs"/>
-                            <constraint firstAttribute="trailing" secondItem="UxJ-mp-xX0" secondAttribute="trailing" id="ejc-CK-GsU"/>
-                            <constraint firstItem="UxJ-mp-xX0" firstAttribute="leading" secondItem="Whk-16-Z09" secondAttribute="leading" id="hlu-2j-faQ"/>
-                            <constraint firstItem="LCb-C5-9hP" firstAttribute="top" secondItem="UxJ-mp-xX0" secondAttribute="bottom" constant="-882" id="ivz-xE-5Fy"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Hustle" id="hw0-RF-0lg"/>
                     <connections>
@@ -102,7 +97,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xxw-jd-5tp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1621.5999999999999" y="857.72113943028489"/>
+            <point key="canvasLocation" x="2054" y="885"/>
         </scene>
         <!--Profile-->
         <scene sceneID="77B-wS-O5D">
@@ -158,7 +153,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1622" y="1616"/>
+            <point key="canvasLocation" x="1266" y="1592"/>
         </scene>
         <!--Job Search-->
         <scene sceneID="4Xl-b2-Gm4">

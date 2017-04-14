@@ -20,13 +20,11 @@
 		503418AC1E9D4259008BC01C /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503418AB1E9D4259008BC01C /* ProfileController.swift */; };
 		503418AE1E9D43FA008BC01C /* HustleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503418AD1E9D43FA008BC01C /* HustleController.swift */; };
 		50522D171EA043D000D400A5 /* Aladin-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50522D151EA043D000D400A5 /* Aladin-Regular.ttf */; };
-		50522D181EA043D100D400A5 /* Handlee-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50522D161EA043D000D400A5 /* Handlee-Regular.ttf */; };
 		E5103F9B1E9C26850038E43F /* JobSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5103F9A1E9C26850038E43F /* JobSearchController.swift */; };
 		E5103FA31E9C3A8A0038E43F /* CloudKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5103FA21E9C3A8A0038E43F /* CloudKit.swift */; };
 		E5103FA51E9C3E4F0038E43F /* JobSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5103FA41E9C3E4F0038E43F /* JobSearch.swift */; };
 		E5CCCEA41E9D55230069C825 /* JobSearchNibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5CCCEA31E9D55230069C825 /* JobSearchNibCell.xib */; };
 		E5CCCEA61E9D570C0069C825 /* JobSearchNibCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CCCEA51E9D570C0069C825 /* JobSearchNibCell.swift */; };
-		E5E804B41EA06ACB005CAFFD /* Aladin-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5E804B21EA06ACB005CAFFD /* Aladin-Regular.ttf */; };
 		E5E804B51EA06ACB005CAFFD /* Handlee-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5E804B31EA06ACB005CAFFD /* Handlee-Regular.ttf */; };
 /* End PBXBuildFile section */
 
@@ -47,13 +45,11 @@
 		503418AB1E9D4259008BC01C /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		503418AD1E9D43FA008BC01C /* HustleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HustleController.swift; sourceTree = "<group>"; };
 		50522D151EA043D000D400A5 /* Aladin-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aladin-Regular.ttf"; path = "../../../../Desktop/Aladin-Regular.ttf"; sourceTree = "<group>"; };
-		50522D161EA043D000D400A5 /* Handlee-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Handlee-Regular.ttf"; path = "../../../../Desktop/Handlee-Regular.ttf"; sourceTree = "<group>"; };
 		E5103F9A1E9C26850038E43F /* JobSearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobSearchController.swift; sourceTree = "<group>"; };
 		E5103FA21E9C3A8A0038E43F /* CloudKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKit.swift; sourceTree = "<group>"; };
 		E5103FA41E9C3E4F0038E43F /* JobSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobSearch.swift; sourceTree = "<group>"; };
 		E5CCCEA31E9D55230069C825 /* JobSearchNibCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobSearchNibCell.xib; sourceTree = "<group>"; };
 		E5CCCEA51E9D570C0069C825 /* JobSearchNibCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobSearchNibCell.swift; sourceTree = "<group>"; };
-		E5E804B21EA06ACB005CAFFD /* Aladin-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aladin-Regular.ttf"; sourceTree = "<group>"; };
 		E5E804B31EA06ACB005CAFFD /* Handlee-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Handlee-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,10 +142,8 @@
 		501CB3D41E9BF264006C98AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E5E804B21EA06ACB005CAFFD /* Aladin-Regular.ttf */,
 				E5E804B31EA06ACB005CAFFD /* Handlee-Regular.ttf */,
 				50522D151EA043D000D400A5 /* Aladin-Regular.ttf */,
-				50522D161EA043D000D400A5 /* Handlee-Regular.ttf */,
 				501CB3D51E9BF264006C98AC /* CloudKit.framework */,
 			);
 			name = Frameworks;
@@ -224,10 +218,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				501CB3C81E9BF1C0006C98AC /* LaunchScreen.storyboard in Resources */,
-				50522D181EA043D100D400A5 /* Handlee-Regular.ttf in Resources */,
 				501CB3C51E9BF1C0006C98AC /* Assets.xcassets in Resources */,
 				501CB3C31E9BF1C0006C98AC /* Main.storyboard in Resources */,
-				E5E804B41EA06ACB005CAFFD /* Aladin-Regular.ttf in Resources */,
 				E5CCCEA41E9D55230069C825 /* JobSearchNibCell.xib in Resources */,
 				50522D171EA043D000D400A5 /* Aladin-Regular.ttf in Resources */,
 				E5E804B51EA06ACB005CAFFD /* Handlee-Regular.ttf in Resources */,
