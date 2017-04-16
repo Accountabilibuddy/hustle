@@ -27,50 +27,50 @@
                 <rect key="frame" x="0.0" y="0.0" width="427" height="1099.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" misplaced="YES" text="You did a high volume search!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8WM-ZY-B7w">
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" text="You did a high volume search!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8WM-ZY-B7w">
                         <rect key="frame" x="8" y="147" width="411" height="29.5"/>
                         <fontDescription key="fontDescription" name="Handlee-Regular" family="Handlee" pointSize="22"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Targeted search, check!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tuH-Bn-ghv">
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Targeted search, check!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tuH-Bn-ghv">
                         <rect key="frame" x="8" y="194" width="411" height="29.5"/>
                         <fontDescription key="fontDescription" name="Handlee-Regular" family="Handlee" pointSize="22"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" misplaced="YES" text="You went to a targeted event." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qT9-FL-iij">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="You went to a targeted event." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qT9-FL-iij">
                         <rect key="frame" x="8" y="250" width="411" height="29.5"/>
                         <fontDescription key="fontDescription" name="Handlee-Regular" family="Handlee" pointSize="22"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" text="Committed to Git Hub." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFm-J1-9Cb">
-                        <rect key="frame" x="8" y="374" width="411" height="29.5"/>
+                        <rect key="frame" x="8" y="403.5" width="411" height="29.5"/>
                         <fontDescription key="fontDescription" name="Handlee-Regular" family="Handlee" pointSize="22"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coding Wars, yes." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tm-ne-60x">
-                        <rect key="frame" x="8" y="433.5" width="411" height="29.5"/>
+                        <rect key="frame" x="8" y="463" width="411" height="29.5"/>
                         <fontDescription key="fontDescription" name="Handlee-Regular" family="Handlee" pointSize="22"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="White boarding practice done." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0n-dv-01k">
-                        <rect key="frame" x="8" y="494" width="411" height="29.5"/>
+                        <rect key="frame" x="8" y="523.5" width="411" height="29.5"/>
                         <fontDescription key="fontDescription" name="Handlee-Regular" family="Handlee" pointSize="22"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" text="Interview questions practiced!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yI-9T-IvX">
-                        <rect key="frame" x="8" y="558.5" width="411" height="29.5"/>
+                        <rect key="frame" x="8" y="588" width="411" height="29.5"/>
                         <fontDescription key="fontDescription" name="Handlee-Regular" family="Handlee" pointSize="22"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Networking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nRB-ZR-pmo">
-                        <rect key="frame" x="8" y="643" width="411" height="39.5"/>
+                        <rect key="frame" x="8" y="672.5" width="411" height="39.5"/>
                         <fontDescription key="fontDescription" name="Aladin-Regular" family="Aladin" pointSize="32"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -84,7 +84,7 @@
                         </userDefinedRuntimeAttributes>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Technical" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCr-Gh-g3p">
-                        <rect key="frame" x="8" y="303.5" width="411" height="39.5"/>
+                        <rect key="frame" x="8" y="333" width="411" height="39.5"/>
                         <fontDescription key="fontDescription" name="Aladin-Regular" family="Aladin" pointSize="32"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -98,25 +98,25 @@
                         </userDefinedRuntimeAttributes>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" text="Info Coffee attended!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LM-vN-dXU">
-                        <rect key="frame" x="6" y="711.5" width="411" height="29.5"/>
+                        <rect key="frame" x="6" y="741" width="411" height="29.5"/>
                         <fontDescription key="fontDescription" name="Handlee-Regular" family="Handlee" pointSize="22"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" text="You went to a MeetUp." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgI-CG-c7o">
-                        <rect key="frame" x="8" y="767" width="411" height="29.5"/>
+                        <rect key="frame" x="8" y="796.5" width="411" height="29.5"/>
                         <fontDescription key="fontDescription" name="Handlee-Regular" family="Handlee" pointSize="22"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Great job visiting a company!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mol-Hf-xtV">
-                        <rect key="frame" x="16" y="826.5" width="411" height="29.5"/>
+                        <rect key="frame" x="16" y="856" width="411" height="29.5"/>
                         <fontDescription key="fontDescription" name="Handlee-Regular" family="Handlee" pointSize="22"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Followed up like a boss." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gyl-cb-jgf">
-                        <rect key="frame" x="8" y="882" width="411" height="29.5"/>
+                        <rect key="frame" x="8" y="911.5" width="411" height="29.5"/>
                         <fontDescription key="fontDescription" name="Handlee-Regular" family="Handlee" pointSize="22"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -128,20 +128,23 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" text="Notes for the Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UP1-SM-SRU">
-                        <rect key="frame" x="8" y="950.5" width="411" height="29.5"/>
+                        <rect key="frame" x="8" y="980" width="411" height="29.5"/>
                         <fontDescription key="fontDescription" name="Handlee-Regular" family="Handlee" pointSize="22"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="YOUR HUSTLE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZmL-58-Jvj">
-                        <rect key="frame" x="0.0" y="8" width="443" height="83"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR HUSTLE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZmL-58-Jvj">
+                        <rect key="frame" x="0.0" y="0.0" width="439" height="83"/>
                         <color key="backgroundColor" red="0.23941148477157359" green="0.23941148477157359" blue="0.23941148477157359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="83" id="YGB-vm-hx2"/>
+                        </constraints>
                         <fontDescription key="fontDescription" name="Aladin-Regular" family="Aladin" pointSize="30"/>
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Job Search" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7u-97-e3w">
-                        <rect key="frame" x="0.0" y="99" width="347" height="40"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job Search" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7u-97-e3w">
+                        <rect key="frame" x="0.0" y="91" width="427" height="40"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="427" id="8Hd-gY-1Kb"/>
                         </constraints>
@@ -161,17 +164,17 @@
                 <constraints>
                     <constraint firstItem="8tm-ne-60x" firstAttribute="top" secondItem="cFm-J1-9Cb" secondAttribute="bottom" constant="30" id="02C-UA-WJe"/>
                     <constraint firstAttribute="bottomMargin" secondItem="TNN-U4-gP6" secondAttribute="bottom" constant="8" id="1DB-er-xKE"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="8WM-ZY-B7w" secondAttribute="trailing" constant="2" id="2ap-UI-3Ea"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="8WM-ZY-B7w" secondAttribute="trailing" id="2ap-UI-3Ea"/>
                     <constraint firstItem="kCr-Gh-g3p" firstAttribute="trailing" secondItem="cFm-J1-9Cb" secondAttribute="trailing" id="4rS-64-3VY"/>
                     <constraint firstItem="cFm-J1-9Cb" firstAttribute="top" secondItem="kCr-Gh-g3p" secondAttribute="bottom" constant="31" id="67E-Sn-f1U"/>
                     <constraint firstItem="5yI-9T-IvX" firstAttribute="leading" secondItem="nRB-ZR-pmo" secondAttribute="leading" id="7A1-R4-Gn1"/>
                     <constraint firstItem="d0n-dv-01k" firstAttribute="leading" secondItem="5yI-9T-IvX" secondAttribute="leading" id="7Cu-ry-jYr"/>
-                    <constraint firstItem="ZmL-58-Jvj" firstAttribute="top" secondItem="MHh-ya-7Qj" secondAttribute="topMargin" id="7El-Fb-ktZ"/>
+                    <constraint firstItem="ZmL-58-Jvj" firstAttribute="top" secondItem="MHh-ya-7Qj" secondAttribute="topMargin" constant="-8" id="7El-Fb-ktZ"/>
                     <constraint firstItem="mgI-CG-c7o" firstAttribute="top" secondItem="4LM-vN-dXU" secondAttribute="bottom" constant="26" id="7Pb-1Z-kzz"/>
-                    <constraint firstItem="w7u-97-e3w" firstAttribute="leading" secondItem="MHh-ya-7Qj" secondAttribute="leading" constant="-13" id="81i-tK-BOR"/>
+                    <constraint firstItem="w7u-97-e3w" firstAttribute="leading" secondItem="MHh-ya-7Qj" secondAttribute="leading" id="81i-tK-BOR"/>
                     <constraint firstAttribute="trailing" secondItem="Mol-Hf-xtV" secondAttribute="trailing" id="8Ja-uv-RzT"/>
-                    <constraint firstItem="tuH-Bn-ghv" firstAttribute="top" secondItem="8WM-ZY-B7w" secondAttribute="bottom" constant="34" id="8NU-l6-B2x"/>
-                    <constraint firstItem="8WM-ZY-B7w" firstAttribute="trailing" secondItem="4LM-vN-dXU" secondAttribute="trailing" id="9ha-vZ-jaE"/>
+                    <constraint firstItem="tuH-Bn-ghv" firstAttribute="top" secondItem="8WM-ZY-B7w" secondAttribute="bottom" constant="17.5" id="8NU-l6-B2x"/>
+                    <constraint firstItem="8WM-ZY-B7w" firstAttribute="trailing" secondItem="4LM-vN-dXU" secondAttribute="trailing" constant="2" id="9ha-vZ-jaE"/>
                     <constraint firstItem="mgI-CG-c7o" firstAttribute="trailing" secondItem="Gyl-cb-jgf" secondAttribute="trailing" id="An4-hB-yGj"/>
                     <constraint firstItem="nRB-ZR-pmo" firstAttribute="trailing" secondItem="mgI-CG-c7o" secondAttribute="trailing" id="Bvp-WY-HCa"/>
                     <constraint firstItem="cFm-J1-9Cb" firstAttribute="trailing" secondItem="8tm-ne-60x" secondAttribute="trailing" id="CkB-CJ-NOV"/>
@@ -183,22 +186,24 @@
                     <constraint firstItem="8tm-ne-60x" firstAttribute="trailing" secondItem="d0n-dv-01k" secondAttribute="trailing" id="NNt-s4-ZuV"/>
                     <constraint firstItem="mgI-CG-c7o" firstAttribute="leading" secondItem="Gyl-cb-jgf" secondAttribute="leading" id="NP3-Gt-yJg"/>
                     <constraint firstItem="4LM-vN-dXU" firstAttribute="top" secondItem="nRB-ZR-pmo" secondAttribute="bottom" constant="29" id="NhI-Z7-cWi"/>
-                    <constraint firstItem="ZmL-58-Jvj" firstAttribute="centerX" secondItem="8WM-ZY-B7w" secondAttribute="centerX" constant="8" id="Oq0-zG-LNL"/>
-                    <constraint firstItem="qT9-FL-iij" firstAttribute="top" secondItem="tuH-Bn-ghv" secondAttribute="bottom" constant="28" id="PXE-Ij-7SZ"/>
-                    <constraint firstItem="8WM-ZY-B7w" firstAttribute="top" secondItem="w7u-97-e3w" secondAttribute="bottom" constant="8" id="Q38-vb-RCu"/>
+                    <constraint firstItem="ZmL-58-Jvj" firstAttribute="centerX" secondItem="8WM-ZY-B7w" secondAttribute="centerX" constant="6" id="Oq0-zG-LNL"/>
+                    <constraint firstItem="qT9-FL-iij" firstAttribute="top" secondItem="tuH-Bn-ghv" secondAttribute="bottom" constant="26.5" id="PXE-Ij-7SZ"/>
+                    <constraint firstItem="8WM-ZY-B7w" firstAttribute="top" secondItem="w7u-97-e3w" secondAttribute="bottom" constant="16" id="Q38-vb-RCu"/>
                     <constraint firstItem="tuH-Bn-ghv" firstAttribute="leading" secondItem="MHh-ya-7Qj" secondAttribute="leadingMargin" id="QPp-YR-tet"/>
+                    <constraint firstAttribute="trailing" secondItem="w7u-97-e3w" secondAttribute="trailing" id="RiN-Nb-4oD"/>
                     <constraint firstItem="kCr-Gh-g3p" firstAttribute="leading" secondItem="cFm-J1-9Cb" secondAttribute="leading" id="SDa-Rp-rM8"/>
-                    <constraint firstItem="8WM-ZY-B7w" firstAttribute="leading" secondItem="MHh-ya-7Qj" secondAttribute="leadingMargin" constant="-2" id="UQo-vB-dwN"/>
+                    <constraint firstItem="8WM-ZY-B7w" firstAttribute="leading" secondItem="MHh-ya-7Qj" secondAttribute="leadingMargin" id="UQo-vB-dwN"/>
                     <constraint firstItem="w7u-97-e3w" firstAttribute="top" secondItem="ZmL-58-Jvj" secondAttribute="bottom" constant="8" id="Va2-ul-oYs"/>
                     <constraint firstItem="5yI-9T-IvX" firstAttribute="trailing" secondItem="nRB-ZR-pmo" secondAttribute="trailing" id="VfE-jY-x9A"/>
                     <constraint firstItem="UP1-SM-SRU" firstAttribute="top" secondItem="Gyl-cb-jgf" secondAttribute="bottom" constant="39" id="a9U-IY-qrh"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="qT9-FL-iij" secondAttribute="trailing" constant="8" id="cxb-2m-NcA"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="qT9-FL-iij" secondAttribute="trailing" id="cxb-2m-NcA"/>
                     <constraint firstItem="Mol-Hf-xtV" firstAttribute="leading" secondItem="MHh-ya-7Qj" secondAttribute="leadingMargin" constant="8" id="d5a-Fx-x1s"/>
                     <constraint firstItem="5yI-9T-IvX" firstAttribute="top" secondItem="d0n-dv-01k" secondAttribute="bottom" constant="35" id="dNU-OV-eIg"/>
                     <constraint firstItem="d0n-dv-01k" firstAttribute="trailing" secondItem="5yI-9T-IvX" secondAttribute="trailing" id="dVJ-at-WXc"/>
                     <constraint firstItem="tuH-Bn-ghv" firstAttribute="leading" secondItem="kCr-Gh-g3p" secondAttribute="leading" id="exu-Cx-4Tj"/>
-                    <constraint firstItem="qT9-FL-iij" firstAttribute="leading" secondItem="MHh-ya-7Qj" secondAttribute="leading" id="f3I-MC-Re6"/>
-                    <constraint firstItem="kCr-Gh-g3p" firstAttribute="top" secondItem="qT9-FL-iij" secondAttribute="bottom" constant="52" id="h3K-f0-dKT"/>
+                    <constraint firstItem="qT9-FL-iij" firstAttribute="leading" secondItem="MHh-ya-7Qj" secondAttribute="leading" constant="8" id="f3I-MC-Re6"/>
+                    <constraint firstItem="w7u-97-e3w" firstAttribute="leading" secondItem="MHh-ya-7Qj" secondAttribute="leading" id="f4x-h2-7uE"/>
+                    <constraint firstItem="kCr-Gh-g3p" firstAttribute="top" secondItem="qT9-FL-iij" secondAttribute="bottom" constant="53.5" id="h3K-f0-dKT"/>
                     <constraint firstItem="TNN-U4-gP6" firstAttribute="leading" secondItem="MHh-ya-7Qj" secondAttribute="leadingMargin" constant="-5" id="hCU-JH-dgU"/>
                     <constraint firstItem="Gyl-cb-jgf" firstAttribute="leading" secondItem="UP1-SM-SRU" secondAttribute="leading" id="iLk-GD-Udz"/>
                     <constraint firstItem="cFm-J1-9Cb" firstAttribute="leading" secondItem="8tm-ne-60x" secondAttribute="leading" id="mTn-YR-RjN"/>
@@ -206,7 +211,7 @@
                     <constraint firstItem="nRB-ZR-pmo" firstAttribute="top" secondItem="5yI-9T-IvX" secondAttribute="bottom" constant="55" id="tOZ-0p-Ncr"/>
                     <constraint firstAttribute="trailingMargin" secondItem="TNN-U4-gP6" secondAttribute="trailing" constant="5" id="upM-so-chf"/>
                     <constraint firstItem="8tm-ne-60x" firstAttribute="leading" secondItem="d0n-dv-01k" secondAttribute="leading" id="v8e-Hy-Hev"/>
-                    <constraint firstItem="8WM-ZY-B7w" firstAttribute="leading" secondItem="4LM-vN-dXU" secondAttribute="leading" id="wBd-jW-76Z"/>
+                    <constraint firstItem="8WM-ZY-B7w" firstAttribute="leading" secondItem="4LM-vN-dXU" secondAttribute="leading" constant="2" id="wBd-jW-76Z"/>
                     <constraint firstItem="Gyl-cb-jgf" firstAttribute="trailing" secondItem="UP1-SM-SRU" secondAttribute="trailing" id="xGX-Eh-A8c"/>
                     <constraint firstItem="tuH-Bn-ghv" firstAttribute="trailing" secondItem="kCr-Gh-g3p" secondAttribute="trailing" id="y5u-iD-Oto"/>
                 </constraints>
